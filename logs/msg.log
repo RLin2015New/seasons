@@ -1,0 +1,966 @@
+2018-01-10 11:40:33,103  INFO (msg:34) - 开始启动服务
+2018-01-10 11:40:33,122  INFO (msg:37) - 配置加载完毕
+2018-01-10 11:40:33,127  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 11:40:33,127  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 11:40:33,127  INFO (msg:34) - 开始初始化DBManagerService服务
+2018-01-10 11:40:33,130 ERROR (msg:44) - 服务启动出错
+java.io.IOException: Could not find resource resource\ibatis\sqlMapConfig.xml
+	at com.ibatis.common.resources.Resources.getResourceAsStream(Resources.java:110)
+	at com.ibatis.common.resources.Resources.getResourceAsStream(Resources.java:95)
+	at com.ibatis.common.resources.Resources.getResourceAsReader(Resources.java:161)
+	at com.test.service.db.mysql.DBManagerService.init(DBManagerService.java:41)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:119)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+2018-01-10 11:40:33,131  INFO (msg:46) - 服务启动完毕
+2018-01-10 11:48:26,635  INFO (msg:34) - 开始启动服务
+2018-01-10 11:48:26,639  INFO (msg:37) - 配置加载完毕
+2018-01-10 11:48:26,644  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 11:48:26,646  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 11:48:26,646  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 11:48:26,650 ERROR (msg:44) - 服务启动出错
+java.io.IOException: Could not find resource .\resource\ibatis\sqlMapConfig.xml
+	at com.ibatis.common.resources.Resources.getResourceAsStream(Resources.java:110)
+	at com.ibatis.common.resources.Resources.getResourceAsStream(Resources.java:95)
+	at com.ibatis.common.resources.Resources.getResourceAsReader(Resources.java:161)
+	at com.test.service.db.mysql.DBManagerService.init(DBManagerService.java:41)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:119)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+2018-01-10 11:48:26,653  INFO (msg:46) - 服务启动完毕
+2018-01-10 11:49:14,999  INFO (msg:34) - 开始启动服务
+2018-01-10 11:49:15,5  INFO (msg:37) - 配置加载完毕
+2018-01-10 11:49:15,9  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 11:49:15,9  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 11:49:15,9  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 11:49:15,298 ERROR (msg:44) - 服务启动出错
+java.lang.RuntimeException: Error occurred.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: org.xml.sax.SAXParseException; lineNumber: 23; columnNumber: 16; 元素类型为 "sqlMapConfig" 的内容不完整, 它必须匹配 "(properties?,settings?,resultObjectFactory?,typeAlias*,typeHandler*,transactionManager?,sqlMap+)+"。
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:49)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:39)
+	at com.ibatis.sqlmap.client.SqlMapClientBuilder.buildSqlMapClient(SqlMapClientBuilder.java:79)
+	at com.test.service.db.mysql.DBManagerService.init(DBManagerService.java:44)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:119)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+Caused by: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: org.xml.sax.SAXParseException; lineNumber: 23; columnNumber: 16; 元素类型为 "sqlMapConfig" 的内容不完整, 它必须匹配 "(properties?,settings?,resultObjectFactory?,typeAlias*,typeHandler*,transactionManager?,sqlMap+)+"。
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:53)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:46)
+	... 6 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 23; columnNumber: 16; 元素类型为 "sqlMapConfig" 的内容不完整, 它必须匹配 "(properties?,settings?,resultObjectFactory?,typeAlias*,typeHandler*,transactionManager?,sqlMap+)+"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1994)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:879)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2967)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at com.ibatis.common.xml.NodeletParser.createDocument(NodeletParser.java:157)
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:50)
+	... 7 more
+2018-01-10 11:49:15,306  INFO (msg:46) - 服务启动完毕
+2018-01-10 11:50:43,21  INFO (msg:34) - 开始启动服务
+2018-01-10 11:50:43,27  INFO (msg:37) - 配置加载完毕
+2018-01-10 11:50:43,49  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 11:50:43,50  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 11:50:43,50  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 11:50:43,57 ERROR (msg:44) - 服务启动出错
+java.io.IOException: Could not find resource resource\ibatis\sqlMapConfig.xml
+	at com.ibatis.common.resources.Resources.getResourceAsStream(Resources.java:110)
+	at com.ibatis.common.resources.Resources.getResourceAsStream(Resources.java:95)
+	at com.ibatis.common.resources.Resources.getResourceAsReader(Resources.java:161)
+	at com.test.service.db.mysql.DBManagerService.init(DBManagerService.java:42)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:119)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+2018-01-10 11:50:43,58  INFO (msg:46) - 服务启动完毕
+2018-01-10 11:51:02,34  INFO (msg:34) - 开始启动服务
+2018-01-10 11:51:02,40  INFO (msg:37) - 配置加载完毕
+2018-01-10 11:51:02,53  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 11:51:02,53  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 11:51:04,478  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 11:52:32,347 ERROR (msg:44) - 服务启动出错
+java.io.IOException: Could not find resource resource\ibatis\sqlMapConfig.xml
+	at com.ibatis.common.resources.Resources.getResourceAsStream(Resources.java:110)
+	at com.ibatis.common.resources.Resources.getResourceAsStream(Resources.java:95)
+	at com.ibatis.common.resources.Resources.getResourceAsReader(Resources.java:161)
+	at com.test.service.db.mysql.DBManagerService.init(DBManagerService.java:42)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:119)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+2018-01-10 11:52:32,348  INFO (msg:46) - 服务启动完毕
+2018-01-10 11:58:00,511  INFO (msg:34) - 开始启动服务
+2018-01-10 11:58:00,517  INFO (msg:37) - 配置加载完毕
+2018-01-10 11:58:00,525  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 11:58:00,528  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 11:58:00,528  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 11:58:00,537 ERROR (msg:44) - 服务启动出错
+java.io.IOException: Could not find resource resource\ibatis\sqlMapConfig.xml
+	at com.ibatis.common.resources.Resources.getResourceAsStream(Resources.java:110)
+	at com.ibatis.common.resources.Resources.getResourceAsReader(Resources.java:180)
+	at com.test.service.db.mysql.DBManagerService.init(DBManagerService.java:44)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:119)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+2018-01-10 11:58:00,539  INFO (msg:46) - 服务启动完毕
+2018-01-10 13:34:35,206  INFO (msg:34) - 开始启动服务
+2018-01-10 13:34:35,212  INFO (msg:37) - 配置加载完毕
+2018-01-10 13:34:35,215  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 13:34:35,215  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 13:34:35,215  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 13:34:35,218 ERROR (msg:44) - 服务启动出错
+java.lang.NullPointerException
+	at com.test.service.db.mysql.DBManagerService.init(DBManagerService.java:47)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:119)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+2018-01-10 13:34:35,220  INFO (msg:46) - 服务启动完毕
+2018-01-10 13:35:48,685  INFO (msg:34) - 开始启动服务
+2018-01-10 13:35:48,689  INFO (msg:37) - 配置加载完毕
+2018-01-10 13:35:48,692  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 13:35:48,692  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 13:35:48,692  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 13:35:48,693  INFO (msg:44) - file:/D:/workSpace/seasons/bin/ibatis/sqlMapConfig.xml
+2018-01-10 13:35:48,700 ERROR (msg:44) - 服务启动出错
+java.io.IOException: Could not find resource resource\ibatis\sqlMapConfig.xml
+	at com.ibatis.common.resources.Resources.getResourceAsStream(Resources.java:110)
+	at com.ibatis.common.resources.Resources.getResourceAsReader(Resources.java:180)
+	at com.test.service.db.mysql.DBManagerService.init(DBManagerService.java:48)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:119)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+2018-01-10 13:35:48,701  INFO (msg:46) - 服务启动完毕
+2018-01-10 13:36:19,14  INFO (msg:34) - 开始启动服务
+2018-01-10 13:36:19,19  INFO (msg:37) - 配置加载完毕
+2018-01-10 13:36:19,23  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 13:36:19,24  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 13:36:19,24  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 13:36:19,25  INFO (msg:48) - file:/D:/workSpace/seasons/bin/
+2018-01-10 13:36:19,30 ERROR (msg:44) - 服务启动出错
+java.io.IOException: Could not find resource resource\ibatis\sqlMapConfig.xml
+	at com.ibatis.common.resources.Resources.getResourceAsStream(Resources.java:110)
+	at com.ibatis.common.resources.Resources.getResourceAsReader(Resources.java:180)
+	at com.test.service.db.mysql.DBManagerService.init(DBManagerService.java:52)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:119)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+2018-01-10 13:36:19,31  INFO (msg:46) - 服务启动完毕
+2018-01-10 13:38:42,446  INFO (msg:34) - 开始启动服务
+2018-01-10 13:38:42,460  INFO (msg:37) - 配置加载完毕
+2018-01-10 13:38:42,468  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 13:38:42,468  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 13:38:42,469  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 13:38:42,481  INFO (msg:50) - null
+2018-01-10 13:38:42,486 ERROR (msg:44) - 服务启动出错
+java.io.IOException: Could not find resource resource\ibatis\sqlMapConfig.xml
+	at com.ibatis.common.resources.Resources.getResourceAsStream(Resources.java:110)
+	at com.ibatis.common.resources.Resources.getResourceAsReader(Resources.java:180)
+	at com.test.service.db.mysql.DBManagerService.init(DBManagerService.java:55)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:119)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+2018-01-10 13:38:42,488  INFO (msg:46) - 服务启动完毕
+2018-01-10 13:41:39,850  INFO (msg:34) - 开始启动服务
+2018-01-10 13:41:39,856  INFO (msg:37) - 配置加载完毕
+2018-01-10 13:41:39,859  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 13:41:39,859  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 13:41:39,859  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 13:41:39,863 ERROR (msg:44) - 服务启动出错
+java.net.MalformedURLException: unknown protocol: d
+	at java.net.URL.<init>(URL.java:600)
+	at java.net.URL.<init>(URL.java:490)
+	at java.net.URL.<init>(URL.java:439)
+	at com.ibatis.common.resources.Resources.getUrlAsStream(Resources.java:219)
+	at com.ibatis.common.resources.Resources.getUrlAsReader(Resources.java:232)
+	at com.test.service.db.mysql.DBManagerService.init(DBManagerService.java:55)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:119)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+2018-01-10 13:41:39,864  INFO (msg:46) - 服务启动完毕
+2018-01-10 13:42:04,341  INFO (msg:34) - 开始启动服务
+2018-01-10 13:42:04,349  INFO (msg:37) - 配置加载完毕
+2018-01-10 13:42:04,353  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 13:42:04,354  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 13:42:04,354  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 13:42:04,360 ERROR (msg:44) - 服务启动出错
+java.net.MalformedURLException: unknown protocol: d
+	at java.net.URL.<init>(URL.java:600)
+	at java.net.URL.<init>(URL.java:490)
+	at java.net.URL.<init>(URL.java:439)
+	at com.ibatis.common.resources.Resources.getUrlAsStream(Resources.java:219)
+	at com.ibatis.common.resources.Resources.getUrlAsReader(Resources.java:232)
+	at com.test.service.db.mysql.DBManagerService.init(DBManagerService.java:55)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:119)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+2018-01-10 13:42:04,362  INFO (msg:46) - 服务启动完毕
+2018-01-10 13:42:20,686  INFO (msg:34) - 开始启动服务
+2018-01-10 13:42:20,689  INFO (msg:37) - 配置加载完毕
+2018-01-10 13:42:20,692  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 13:42:20,692  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 13:42:20,692  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 13:42:20,809 ERROR (msg:44) - 服务启动出错
+java.lang.RuntimeException: Error occurred.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: org.xml.sax.SAXParseException; lineNumber: 23; columnNumber: 16; 元素类型为 "sqlMapConfig" 的内容不完整, 它必须匹配 "(properties?,settings?,resultObjectFactory?,typeAlias*,typeHandler*,transactionManager?,sqlMap+)+"。
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:49)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:39)
+	at com.ibatis.sqlmap.client.SqlMapClientBuilder.buildSqlMapClient(SqlMapClientBuilder.java:79)
+	at com.test.service.db.mysql.DBManagerService.init(DBManagerService.java:59)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:119)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+Caused by: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: org.xml.sax.SAXParseException; lineNumber: 23; columnNumber: 16; 元素类型为 "sqlMapConfig" 的内容不完整, 它必须匹配 "(properties?,settings?,resultObjectFactory?,typeAlias*,typeHandler*,transactionManager?,sqlMap+)+"。
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:53)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:46)
+	... 6 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 23; columnNumber: 16; 元素类型为 "sqlMapConfig" 的内容不完整, 它必须匹配 "(properties?,settings?,resultObjectFactory?,typeAlias*,typeHandler*,transactionManager?,sqlMap+)+"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1994)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:879)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2967)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at com.ibatis.common.xml.NodeletParser.createDocument(NodeletParser.java:157)
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:50)
+	... 7 more
+2018-01-10 13:42:20,812  INFO (msg:46) - 服务启动完毕
+2018-01-10 13:46:29,202  INFO (msg:34) - 开始启动服务
+2018-01-10 13:46:29,207  INFO (msg:37) - 配置加载完毕
+2018-01-10 13:46:29,213  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 13:46:29,213  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 13:46:29,213  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 13:46:29,393 ERROR (msg:44) - 服务启动出错
+java.lang.RuntimeException: Error occurred.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: org.xml.sax.SAXParseException; lineNumber: 23; columnNumber: 16; 元素类型为 "sqlMapConfig" 的内容不完整, 它必须匹配 "(properties?,settings?,resultObjectFactory?,typeAlias*,typeHandler*,transactionManager?,sqlMap+)+"。
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:49)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:39)
+	at com.ibatis.sqlmap.client.SqlMapClientBuilder.buildSqlMapClient(SqlMapClientBuilder.java:79)
+	at com.test.service.db.mysql.DBManagerService.init(DBManagerService.java:62)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:119)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+Caused by: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: org.xml.sax.SAXParseException; lineNumber: 23; columnNumber: 16; 元素类型为 "sqlMapConfig" 的内容不完整, 它必须匹配 "(properties?,settings?,resultObjectFactory?,typeAlias*,typeHandler*,transactionManager?,sqlMap+)+"。
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:53)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:46)
+	... 6 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 23; columnNumber: 16; 元素类型为 "sqlMapConfig" 的内容不完整, 它必须匹配 "(properties?,settings?,resultObjectFactory?,typeAlias*,typeHandler*,transactionManager?,sqlMap+)+"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1994)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:879)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2967)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at com.ibatis.common.xml.NodeletParser.createDocument(NodeletParser.java:157)
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:50)
+	... 7 more
+2018-01-10 13:46:29,396  INFO (msg:46) - 服务启动完毕
+2018-01-10 13:47:33,353  INFO (msg:34) - 开始启动服务
+2018-01-10 13:47:33,359  INFO (msg:37) - 配置加载完毕
+2018-01-10 13:47:33,363  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 13:47:33,363  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 13:47:33,364  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 13:47:33,492 ERROR (msg:44) - 服务启动出错
+java.lang.RuntimeException: Error occurred.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: org.xml.sax.SAXParseException; lineNumber: 23; columnNumber: 16; 元素类型为 "sqlMapConfig" 的内容不完整, 它必须匹配 "(properties?,settings?,resultObjectFactory?,typeAlias*,typeHandler*,transactionManager?,sqlMap+)+"。
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:49)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:39)
+	at com.ibatis.sqlmap.client.SqlMapClientBuilder.buildSqlMapClient(SqlMapClientBuilder.java:79)
+	at com.test.service.db.mysql.DBManagerService.init(DBManagerService.java:62)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:119)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+Caused by: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: org.xml.sax.SAXParseException; lineNumber: 23; columnNumber: 16; 元素类型为 "sqlMapConfig" 的内容不完整, 它必须匹配 "(properties?,settings?,resultObjectFactory?,typeAlias*,typeHandler*,transactionManager?,sqlMap+)+"。
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:53)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:46)
+	... 6 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 23; columnNumber: 16; 元素类型为 "sqlMapConfig" 的内容不完整, 它必须匹配 "(properties?,settings?,resultObjectFactory?,typeAlias*,typeHandler*,transactionManager?,sqlMap+)+"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1994)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:879)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2967)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at com.ibatis.common.xml.NodeletParser.createDocument(NodeletParser.java:157)
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:50)
+	... 7 more
+2018-01-10 13:47:33,494  INFO (msg:46) - 服务启动完毕
+2018-01-10 13:49:27,832  INFO (msg:34) - 开始启动服务
+2018-01-10 13:49:27,836  INFO (msg:37) - 配置加载完毕
+2018-01-10 13:49:27,839  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 13:49:27,840  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 13:49:27,840  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 13:49:27,976 ERROR (msg:44) - 服务启动出错
+java.lang.RuntimeException: Error occurred.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: org.xml.sax.SAXParseException; lineNumber: 23; columnNumber: 16; 元素类型为 "sqlMapConfig" 的内容不完整, 它必须匹配 "(properties?,settings?,resultObjectFactory?,typeAlias*,typeHandler*,transactionManager?,sqlMap+)+"。
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:49)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:39)
+	at com.ibatis.sqlmap.client.SqlMapClientBuilder.buildSqlMapClient(SqlMapClientBuilder.java:79)
+	at com.test.service.db.mysql.DBManagerService.init(DBManagerService.java:44)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:119)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+Caused by: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: org.xml.sax.SAXParseException; lineNumber: 23; columnNumber: 16; 元素类型为 "sqlMapConfig" 的内容不完整, 它必须匹配 "(properties?,settings?,resultObjectFactory?,typeAlias*,typeHandler*,transactionManager?,sqlMap+)+"。
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:53)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:46)
+	... 6 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 23; columnNumber: 16; 元素类型为 "sqlMapConfig" 的内容不完整, 它必须匹配 "(properties?,settings?,resultObjectFactory?,typeAlias*,typeHandler*,transactionManager?,sqlMap+)+"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1994)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:879)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2967)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at com.ibatis.common.xml.NodeletParser.createDocument(NodeletParser.java:157)
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:50)
+	... 7 more
+2018-01-10 13:49:27,984  INFO (msg:46) - 服务启动完毕
+2018-01-10 13:58:36,184  INFO (msg:34) - 开始启动服务
+2018-01-10 13:58:36,188  INFO (msg:37) - 配置加载完毕
+2018-01-10 13:58:36,191  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 13:58:36,191  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 13:58:36,192  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 13:58:36,378 ERROR (msg:44) - 服务启动出错
+java.lang.RuntimeException: Error occurred.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/transactionManager/dataSource/end()'.  Cause: com.ibatis.sqlmap.client.SqlMapException: Error initializing DataSource.  Could not instantiate DataSourceFactory.  Cause: java.lang.RuntimeException: SimpleDataSource: Error while loading properties. Cause: java.lang.ClassNotFoundException: jdbc.ClassDriver
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:49)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:39)
+	at com.ibatis.sqlmap.client.SqlMapClientBuilder.buildSqlMapClient(SqlMapClientBuilder.java:79)
+	at com.test.service.db.mysql.DBManagerService.init(DBManagerService.java:44)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:119)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+Caused by: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/transactionManager/dataSource/end()'.  Cause: com.ibatis.sqlmap.client.SqlMapException: Error initializing DataSource.  Could not instantiate DataSourceFactory.  Cause: java.lang.RuntimeException: SimpleDataSource: Error while loading properties. Cause: java.lang.ClassNotFoundException: jdbc.ClassDriver
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:53)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:46)
+	... 6 more
+Caused by: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/transactionManager/dataSource/end()'.  Cause: com.ibatis.sqlmap.client.SqlMapException: Error initializing DataSource.  Could not instantiate DataSourceFactory.  Cause: java.lang.RuntimeException: SimpleDataSource: Error while loading properties. Cause: java.lang.ClassNotFoundException: jdbc.ClassDriver
+	at com.ibatis.common.xml.NodeletParser.processNodelet(NodeletParser.java:123)
+	at com.ibatis.common.xml.NodeletParser.process(NodeletParser.java:105)
+	at com.ibatis.common.xml.NodeletParser.process(NodeletParser.java:102)
+	at com.ibatis.common.xml.NodeletParser.process(NodeletParser.java:102)
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:72)
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:51)
+	... 7 more
+Caused by: com.ibatis.sqlmap.client.SqlMapException: Error initializing DataSource.  Could not instantiate DataSourceFactory.  Cause: java.lang.RuntimeException: SimpleDataSource: Error while loading properties. Cause: java.lang.ClassNotFoundException: jdbc.ClassDriver
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser$9.process(SqlMapConfigParser.java:227)
+	at com.ibatis.common.xml.NodeletParser.processNodelet(NodeletParser.java:121)
+	... 12 more
+Caused by: java.lang.RuntimeException: SimpleDataSource: Error while loading properties. Cause: java.lang.ClassNotFoundException: jdbc.ClassDriver
+	at com.ibatis.common.jdbc.SimpleDataSource.initialize(SimpleDataSource.java:210)
+	at com.ibatis.common.jdbc.SimpleDataSource.<init>(SimpleDataSource.java:116)
+	at com.ibatis.sqlmap.engine.datasource.SimpleDataSourceFactory.initialize(SimpleDataSourceFactory.java:31)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser$9.process(SqlMapConfigParser.java:220)
+	... 13 more
+Caused by: java.lang.ClassNotFoundException: jdbc.ClassDriver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.ibatis.common.resources.Resources.classForName(Resources.java:267)
+	at com.ibatis.common.resources.Resources.instantiate(Resources.java:283)
+	at com.ibatis.common.jdbc.SimpleDataSource.initialize(SimpleDataSource.java:199)
+	... 16 more
+2018-01-10 13:58:36,382  INFO (msg:46) - 服务启动完毕
+2018-01-10 14:00:43,454  INFO (msg:34) - 开始启动服务
+2018-01-10 14:00:43,460  INFO (msg:37) - 配置加载完毕
+2018-01-10 14:00:43,463  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 14:00:43,464  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 14:00:43,464  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 14:00:43,621 ERROR (msg:44) - 服务启动出错
+java.lang.RuntimeException: Error occurred.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/transactionManager/dataSource/end()'.  Cause: com.ibatis.sqlmap.client.SqlMapException: Error initializing DataSource.  Could not instantiate DataSourceFactory.  Cause: java.lang.RuntimeException: SimpleDataSource: Error while loading properties. Cause: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:49)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:39)
+	at com.ibatis.sqlmap.client.SqlMapClientBuilder.buildSqlMapClient(SqlMapClientBuilder.java:79)
+	at com.test.service.db.mysql.DBManagerService.init(DBManagerService.java:44)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:119)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+Caused by: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/transactionManager/dataSource/end()'.  Cause: com.ibatis.sqlmap.client.SqlMapException: Error initializing DataSource.  Could not instantiate DataSourceFactory.  Cause: java.lang.RuntimeException: SimpleDataSource: Error while loading properties. Cause: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:53)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:46)
+	... 6 more
+Caused by: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/transactionManager/dataSource/end()'.  Cause: com.ibatis.sqlmap.client.SqlMapException: Error initializing DataSource.  Could not instantiate DataSourceFactory.  Cause: java.lang.RuntimeException: SimpleDataSource: Error while loading properties. Cause: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at com.ibatis.common.xml.NodeletParser.processNodelet(NodeletParser.java:123)
+	at com.ibatis.common.xml.NodeletParser.process(NodeletParser.java:105)
+	at com.ibatis.common.xml.NodeletParser.process(NodeletParser.java:102)
+	at com.ibatis.common.xml.NodeletParser.process(NodeletParser.java:102)
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:72)
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:51)
+	... 7 more
+Caused by: com.ibatis.sqlmap.client.SqlMapException: Error initializing DataSource.  Could not instantiate DataSourceFactory.  Cause: java.lang.RuntimeException: SimpleDataSource: Error while loading properties. Cause: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser$9.process(SqlMapConfigParser.java:227)
+	at com.ibatis.common.xml.NodeletParser.processNodelet(NodeletParser.java:121)
+	... 12 more
+Caused by: java.lang.RuntimeException: SimpleDataSource: Error while loading properties. Cause: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at com.ibatis.common.jdbc.SimpleDataSource.initialize(SimpleDataSource.java:210)
+	at com.ibatis.common.jdbc.SimpleDataSource.<init>(SimpleDataSource.java:116)
+	at com.ibatis.sqlmap.engine.datasource.SimpleDataSourceFactory.initialize(SimpleDataSourceFactory.java:31)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser$9.process(SqlMapConfigParser.java:220)
+	... 13 more
+Caused by: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.ibatis.common.resources.Resources.classForName(Resources.java:267)
+	at com.ibatis.common.resources.Resources.instantiate(Resources.java:283)
+	at com.ibatis.common.jdbc.SimpleDataSource.initialize(SimpleDataSource.java:199)
+	... 16 more
+2018-01-10 14:00:43,623  INFO (msg:46) - 服务启动完毕
+2018-01-10 14:01:39,278  INFO (msg:34) - 开始启动服务
+2018-01-10 14:01:39,284  INFO (msg:37) - 配置加载完毕
+2018-01-10 14:01:39,288  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 14:01:39,289  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 14:01:39,289  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 14:01:39,588  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 14:01:39,607 ERROR (msg:44) - 服务启动出错
+java.lang.NullPointerException: 存在没有找到匹配的参数列:1_class com.test.service.init.configInit.beans.TestBean
+	at com.test.base.BaseConfigBean.getBeanByLine(BaseConfigBean.java:83)
+	at com.test.service.init.configInit.beans.TestBean.getBeansByFile(TestBean.java:76)
+	at com.test.service.init.configInit.ConfigLoadService.init(ConfigLoadService.java:27)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:120)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+2018-01-10 14:01:39,609  INFO (msg:46) - 服务启动完毕
+2018-01-10 14:03:27,666  INFO (msg:34) - 开始启动服务
+2018-01-10 14:03:27,673  INFO (msg:37) - 配置加载完毕
+2018-01-10 14:03:27,679  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 14:03:27,679  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 14:03:27,680  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 14:03:27,859  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 14:13:29,958  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 14:13:34,939 ERROR (msg:44) - 服务启动出错
+java.lang.NullPointerException: 存在没有找到匹配的参数列:d_class com.test.service.init.configInit.beans.TestBean
+	at com.test.base.BaseConfigBean.getBeanByLine(BaseConfigBean.java:83)
+	at com.test.service.init.configInit.beans.TestBean.getBeansByFile(TestBean.java:76)
+	at com.test.service.init.configInit.ConfigLoadService.init(ConfigLoadService.java:27)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:120)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+2018-01-10 14:13:34,950  INFO (msg:46) - 服务启动完毕
+2018-01-10 14:13:46,8  INFO (msg:34) - 开始启动服务
+2018-01-10 14:13:46,11  INFO (msg:37) - 配置加载完毕
+2018-01-10 14:13:46,14  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 14:13:46,15  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 14:13:46,15  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 14:13:46,213  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 14:13:46,229 ERROR (msg:44) - 服务启动出错
+java.lang.NullPointerException: 存在没有找到匹配的参数列:d_class com.test.service.init.configInit.beans.TestBean
+	at com.test.base.BaseConfigBean.getBeanByLine(BaseConfigBean.java:83)
+	at com.test.service.init.configInit.beans.TestBean.getBeansByFile(TestBean.java:76)
+	at com.test.service.init.configInit.ConfigLoadService.init(ConfigLoadService.java:27)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:120)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+2018-01-10 14:13:46,230  INFO (msg:46) - 服务启动完毕
+2018-01-10 14:13:57,331  INFO (msg:34) - 开始启动服务
+2018-01-10 14:13:57,337  INFO (msg:37) - 配置加载完毕
+2018-01-10 14:13:57,341  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 14:13:57,341  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 14:13:57,341  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 14:13:57,543  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 14:14:08,714 ERROR (msg:44) - 服务启动出错
+java.lang.NullPointerException: 存在没有找到匹配的参数列:d_class com.test.service.init.configInit.beans.TestBean
+	at com.test.base.BaseConfigBean.getBeanByLine(BaseConfigBean.java:83)
+	at com.test.service.init.configInit.beans.TestBean.getBeansByFile(TestBean.java:76)
+	at com.test.service.init.configInit.ConfigLoadService.init(ConfigLoadService.java:27)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:120)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+2018-01-10 14:14:08,715  INFO (msg:46) - 服务启动完毕
+2018-01-10 14:14:56,843  INFO (msg:34) - 开始启动服务
+2018-01-10 14:14:56,851  INFO (msg:37) - 配置加载完毕
+2018-01-10 14:14:56,856  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 14:14:56,856  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 14:14:56,857  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 14:14:57,39  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 14:16:15,175  INFO (msg:34) - 开始启动服务
+2018-01-10 14:16:15,180  INFO (msg:37) - 配置加载完毕
+2018-01-10 14:16:15,186  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 14:16:15,186  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 14:16:15,186  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 14:16:15,378  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 14:16:17,308 ERROR (msg:44) - 服务启动出错
+java.lang.IllegalAccessException: Class com.test.base.BaseConfigBean can not access a member of class com.test.service.init.configInit.beans.TestBean with modifiers "private"
+	at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+	at java.lang.reflect.Field.set(Field.java:761)
+	at com.test.base.BaseConfigBean.getBeanByLine(BaseConfigBean.java:61)
+	at com.test.service.init.configInit.beans.TestBean.getBeansByFile(TestBean.java:76)
+	at com.test.service.init.configInit.ConfigLoadService.init(ConfigLoadService.java:27)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:120)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:107)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:38)
+2018-01-10 14:16:17,309  INFO (msg:46) - 服务启动完毕
+2018-01-10 14:16:59,336  INFO (msg:34) - 开始启动服务
+2018-01-10 14:16:59,341  INFO (msg:37) - 配置加载完毕
+2018-01-10 14:16:59,346  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 14:16:59,348  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 14:16:59,348  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 14:16:59,554  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 14:16:59,610  INFO (msg:39) - 服务加载完毕
+2018-01-10 14:16:59,610  INFO (msg:41) - 定时调度已启动
+2018-01-10 14:16:59,610  INFO (msg:46) - 服务启动完毕
+2018-01-10 14:18:06,385  INFO (msg:34) - 开始启动服务
+2018-01-10 14:18:06,389  INFO (msg:37) - 配置加载完毕
+2018-01-10 14:18:06,392  INFO (msg:19) - 开始初始化JettyServerService服务
+2018-01-10 14:18:06,393  INFO (msg:19) - 开始初始化WebSocketService服务
+2018-01-10 14:18:06,393  INFO (msg:35) - 开始初始化DBManagerService服务
+2018-01-10 14:18:06,591  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 14:18:07,7  INFO (msg:90) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-10 14:18:07,9  INFO (msg:90) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-10 14:18:07,9  INFO (msg:39) - 服务加载完毕
+2018-01-10 14:18:07,9  INFO (msg:41) - 定时调度已启动
+2018-01-10 14:18:07,10  INFO (msg:46) - 服务启动完毕
+2018-01-10 15:43:52,375  INFO (msg:34) - 开始启动服务
+2018-01-10 15:43:52,381  INFO (msg:37) - 配置加载完毕
+2018-01-10 15:43:52,394  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-10 15:43:52,396  INFO (msg:33) - 开始初始化WebSocketService服务
+2018-01-10 15:43:52,401  INFO (msg:46) - thread1 启动对于:8777监听
+2018-01-10 15:43:52,402  INFO (msg:48) - thread2 启动对于:8777监听
+2018-01-10 15:43:52,402  INFO (msg:36) - 开始初始化DBManagerService服务
+2018-01-10 15:43:52,716  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 15:43:52,975  INFO (msg:90) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-10 15:43:52,978  INFO (msg:90) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-10 15:43:52,978  INFO (msg:39) - 服务加载完毕
+2018-01-10 15:43:52,979  INFO (msg:41) - 定时调度已启动
+2018-01-10 15:43:52,979  INFO (msg:46) - 服务启动完毕
+2018-01-10 15:52:06,441  INFO (msg:34) - 开始启动服务
+2018-01-10 15:52:06,444  INFO (msg:37) - 配置加载完毕
+2018-01-10 15:52:06,457  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-10 15:52:06,458  INFO (msg:33) - 开始初始化WebSocketService服务
+2018-01-10 15:52:06,459  INFO (msg:36) - 开始初始化DBManagerService服务
+2018-01-10 15:52:06,459  INFO (msg:46) - thread1 启动对于:8777监听
+2018-01-10 15:52:06,460  INFO (msg:48) - thread2 启动对于:8777监听
+2018-01-10 15:52:06,793  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 15:52:07,7 ERROR (msg:53) -   WebSocketService error 
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:321)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:236)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:366)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.jettyServer.JettyServer.startJetty(JettyServer.java:116)
+	at com.test.web.websocket.WebSocketService$1.run(WebSocketService.java:50)
+	at java.lang.Thread.run(Thread.java:748)
+2018-01-10 15:52:07,308  INFO (msg:90) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-10 15:52:07,310  INFO (msg:90) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-10 15:52:07,310  INFO (msg:39) - 服务加载完毕
+2018-01-10 15:52:07,311  INFO (msg:41) - 定时调度已启动
+2018-01-10 15:52:07,311  INFO (msg:46) - 服务启动完毕
+2018-01-10 15:54:11,778  INFO (msg:34) - 开始启动服务
+2018-01-10 15:54:11,785  INFO (msg:37) - 配置加载完毕
+2018-01-10 15:54:11,809  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-10 15:54:11,811  INFO (msg:33) - 开始初始化WebSocketService服务
+2018-01-10 15:54:11,813  INFO (msg:46) - thread1 启动对于:8777监听
+2018-01-10 15:54:11,815  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-10 15:54:11,814  INFO (msg:36) - 开始初始化DBManagerService服务
+2018-01-10 15:54:12,77  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 15:54:12,428  INFO (msg:90) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-10 15:54:12,433  INFO (msg:90) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-10 15:54:12,433  INFO (msg:39) - 服务加载完毕
+2018-01-10 15:54:12,433  INFO (msg:41) - 定时调度已启动
+2018-01-10 15:54:12,434  INFO (msg:46) - 服务启动完毕
+2018-01-10 16:11:55,277  INFO (msg:34) - 开始启动服务
+2018-01-10 16:11:55,289  INFO (msg:37) - 配置加载完毕
+2018-01-10 16:11:55,300  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-10 16:11:55,306  INFO (msg:33) - 开始初始化WebSocketService服务
+2018-01-10 16:11:55,308  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-10 16:11:55,326  INFO (msg:36) - 开始初始化DBManagerService服务
+2018-01-10 16:11:55,337  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-10 16:11:55,713  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 16:11:56,72  INFO (msg:90) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-10 16:11:56,83  INFO (msg:90) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-10 16:11:56,84  INFO (msg:39) - 服务加载完毕
+2018-01-10 16:11:56,85  INFO (msg:41) - 定时调度已启动
+2018-01-10 16:11:56,85  INFO (msg:46) - 服务启动完毕
+2018-01-10 16:13:08,13  INFO (msg:34) - Welcome to seasons!!!
+2018-01-10 16:13:08,23  INFO (msg:35) - 开始启动服务
+2018-01-10 16:13:08,24  INFO (msg:38) - 配置加载完毕
+2018-01-10 16:13:08,37  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-10 16:13:08,38  INFO (msg:33) - 开始初始化WebSocketService服务
+2018-01-10 16:13:08,40  INFO (msg:36) - 开始初始化DBManagerService服务
+2018-01-10 16:13:08,42  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-10 16:13:08,44  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-10 16:13:08,395  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 16:13:08,679  INFO (msg:90) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-10 16:13:08,686  INFO (msg:90) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-10 16:13:08,686  INFO (msg:40) - 服务加载完毕
+2018-01-10 16:13:08,687  INFO (msg:42) - 定时调度已启动
+2018-01-10 16:13:08,687  INFO (msg:47) - 服务启动完毕
+2018-01-10 16:14:48,987  INFO (msg:35) - ********************
+2018-01-10 16:14:48,991  INFO (msg:36) - +                                            +
+2018-01-10 16:14:48,991  INFO (msg:37) - Welcome to seasons!!!
+2018-01-10 16:14:48,992  INFO (msg:38) - +++++++++++++++++++
+2018-01-10 16:14:48,992  INFO (msg:39) - 开始启动服务
+2018-01-10 16:14:48,992  INFO (msg:42) - 配置加载完毕
+2018-01-10 16:14:49,6  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-10 16:14:49,9  INFO (msg:33) - 开始初始化WebSocketService服务
+2018-01-10 16:14:49,10  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-10 16:14:49,11  INFO (msg:36) - 开始初始化DBManagerService服务
+2018-01-10 16:14:49,15  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-10 16:14:49,317  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 16:14:49,611  INFO (msg:90) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-10 16:14:49,613  INFO (msg:90) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-10 16:14:49,614  INFO (msg:44) - 服务加载完毕
+2018-01-10 16:14:49,614  INFO (msg:46) - 定时调度已启动
+2018-01-10 16:14:49,614  INFO (msg:51) - 服务启动完毕
+2018-01-10 16:15:06,214  INFO (msg:35) -  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  * 
+2018-01-10 16:15:06,220  INFO (msg:36) - +                                            +
+2018-01-10 16:15:06,220  INFO (msg:37) - Welcome to seasons!!!
+2018-01-10 16:15:06,220  INFO (msg:38) - +++++++++++++++++++
+2018-01-10 16:15:06,221  INFO (msg:39) - 开始启动服务
+2018-01-10 16:15:06,221  INFO (msg:42) - 配置加载完毕
+2018-01-10 16:15:06,233  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-10 16:15:06,234  INFO (msg:33) - 开始初始化WebSocketService服务
+2018-01-10 16:15:06,235  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-10 16:15:06,236  INFO (msg:36) - 开始初始化DBManagerService服务
+2018-01-10 16:15:06,243  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-10 16:15:06,518  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 16:15:06,874  INFO (msg:90) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-10 16:15:06,883  INFO (msg:90) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-10 16:15:06,884  INFO (msg:44) - 服务加载完毕
+2018-01-10 16:15:06,884  INFO (msg:46) - 定时调度已启动
+2018-01-10 16:15:06,884  INFO (msg:51) - 服务启动完毕
+2018-01-10 16:15:30,87  INFO (msg:35) - * * * * * * * * * * * * * * * * * * * * 
+2018-01-10 16:15:30,90  INFO (msg:36) - +                                            +
+2018-01-10 16:15:30,90  INFO (msg:37) - Welcome to seasons!!!
+2018-01-10 16:15:30,90  INFO (msg:38) - +++++++++++++++++++
+2018-01-10 16:15:30,91  INFO (msg:39) - 开始启动服务
+2018-01-10 16:15:30,91  INFO (msg:42) - 配置加载完毕
+2018-01-10 16:15:30,102  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-10 16:15:30,104  INFO (msg:33) - 开始初始化WebSocketService服务
+2018-01-10 16:15:30,107  INFO (msg:36) - 开始初始化DBManagerService服务
+2018-01-10 16:15:30,110  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-10 16:15:30,110  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-10 16:15:30,360  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 16:15:30,704  INFO (msg:90) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-10 16:15:30,709  INFO (msg:90) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-10 16:15:30,710  INFO (msg:44) - 服务加载完毕
+2018-01-10 16:15:30,710  INFO (msg:46) - 定时调度已启动
+2018-01-10 16:15:30,710  INFO (msg:51) - 服务启动完毕
+2018-01-10 16:15:40,0  INFO (msg:35) - * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+2018-01-10 16:15:40,5  INFO (msg:36) - +                                            +
+2018-01-10 16:15:40,5  INFO (msg:37) - Welcome to seasons!!!
+2018-01-10 16:15:40,5  INFO (msg:38) - +++++++++++++++++++
+2018-01-10 16:15:40,5  INFO (msg:39) - 开始启动服务
+2018-01-10 16:15:40,6  INFO (msg:42) - 配置加载完毕
+2018-01-10 16:15:40,15  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-10 16:15:40,17  INFO (msg:33) - 开始初始化WebSocketService服务
+2018-01-10 16:15:40,19  INFO (msg:36) - 开始初始化DBManagerService服务
+2018-01-10 16:15:40,19  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-10 16:15:40,21  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-10 16:15:40,385 ERROR (msg:49) -   JettyServerService error 
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:321)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:236)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:366)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.jettyServer.JettyServer.startJetty(JettyServer.java:116)
+	at com.test.web.httpRequest.JettyServerService$1.run(JettyServerService.java:46)
+	at java.lang.Thread.run(Thread.java:748)
+2018-01-10 16:15:40,387 ERROR (msg:53) -   WebSocketService error 
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:321)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:236)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:366)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.jettyServer.JettyServer.startJetty(JettyServer.java:116)
+	at com.test.web.websocket.WebSocketService$1.run(WebSocketService.java:50)
+	at java.lang.Thread.run(Thread.java:748)
+2018-01-10 16:15:40,402  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 16:15:40,651  INFO (msg:90) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-10 16:15:40,653  INFO (msg:90) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-10 16:15:40,653  INFO (msg:44) - 服务加载完毕
+2018-01-10 16:15:40,653  INFO (msg:46) - 定时调度已启动
+2018-01-10 16:15:40,654  INFO (msg:51) - 服务启动完毕
+2018-01-10 16:16:35,515  INFO (msg:35) - * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+2018-01-10 16:16:35,519  INFO (msg:36) -                                                                           **
+2018-01-10 16:16:35,520  INFO (msg:37) - Welcome to seasons!!!
+2018-01-10 16:16:35,520  INFO (msg:38) - +++++++++++++++++++
+2018-01-10 16:16:35,520  INFO (msg:39) - 开始启动服务
+2018-01-10 16:16:35,521  INFO (msg:42) - 配置加载完毕
+2018-01-10 16:16:35,533  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-10 16:16:35,534  INFO (msg:33) - 开始初始化WebSocketService服务
+2018-01-10 16:16:35,538  INFO (msg:36) - 开始初始化DBManagerService服务
+2018-01-10 16:16:35,539  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-10 16:16:35,539  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-10 16:16:35,793  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 16:16:36,96  INFO (msg:90) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-10 16:16:36,102  INFO (msg:90) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-10 16:16:36,102  INFO (msg:44) - 服务加载完毕
+2018-01-10 16:16:36,102  INFO (msg:46) - 定时调度已启动
+2018-01-10 16:16:36,102  INFO (msg:51) - 服务启动完毕
+2018-01-10 16:16:56,669  INFO (msg:35) - * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+2018-01-10 16:16:56,674  INFO (msg:36) - *                                                                          *
+2018-01-10 16:16:56,674  INFO (msg:37) - Welcome to seasons!!!
+2018-01-10 16:16:56,675  INFO (msg:38) - +++++++++++++++++++
+2018-01-10 16:16:56,676  INFO (msg:39) - 开始启动服务
+2018-01-10 16:16:56,677  INFO (msg:42) - 配置加载完毕
+2018-01-10 16:16:56,685  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-10 16:16:56,687  INFO (msg:33) - 开始初始化WebSocketService服务
+2018-01-10 16:16:56,688  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-10 16:16:56,689  INFO (msg:36) - 开始初始化DBManagerService服务
+2018-01-10 16:16:56,694  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-10 16:16:57,69  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 16:16:57,320  INFO (msg:90) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-10 16:16:57,323  INFO (msg:90) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-10 16:16:57,323  INFO (msg:44) - 服务加载完毕
+2018-01-10 16:16:57,323  INFO (msg:46) - 定时调度已启动
+2018-01-10 16:16:57,324  INFO (msg:51) - 服务启动完毕
+2018-01-10 16:17:35,746  INFO (msg:35) - * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+2018-01-10 16:17:35,753  INFO (msg:36) - *                                                                              *
+2018-01-10 16:17:35,755  INFO (msg:37) - Welcome to seasons!!!
+2018-01-10 16:17:35,755  INFO (msg:38) - +++++++++++++++++++
+2018-01-10 16:17:35,755  INFO (msg:39) - 开始启动服务
+2018-01-10 16:17:35,756  INFO (msg:42) - 配置加载完毕
+2018-01-10 16:17:35,765  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-10 16:17:35,768  INFO (msg:33) - 开始初始化WebSocketService服务
+2018-01-10 16:17:35,769  INFO (msg:36) - 开始初始化DBManagerService服务
+2018-01-10 16:17:35,773  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-10 16:17:35,774  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-10 16:17:36,99  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 16:17:36,402  INFO (msg:90) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-10 16:17:36,409  INFO (msg:90) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-10 16:17:36,410  INFO (msg:44) - 服务加载完毕
+2018-01-10 16:17:36,410  INFO (msg:46) - 定时调度已启动
+2018-01-10 16:17:36,410  INFO (msg:51) - 服务启动完毕
+2018-01-10 16:18:28,885  INFO (msg:35) - ********************************************************************************
+2018-01-10 16:18:28,888  INFO (msg:36) - *##############################################################################
+2018-01-10 16:18:28,888  INFO (msg:37) - Welcome to seasons!!!
+2018-01-10 16:18:28,888  INFO (msg:38) - +++++++++++++++++++
+2018-01-10 16:18:28,889  INFO (msg:39) - 开始启动服务
+2018-01-10 16:18:28,889  INFO (msg:42) - 配置加载完毕
+2018-01-10 16:18:28,896  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-10 16:18:28,901  INFO (msg:33) - 开始初始化WebSocketService服务
+2018-01-10 16:18:28,902  INFO (msg:36) - 开始初始化DBManagerService服务
+2018-01-10 16:18:28,904  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-10 16:18:28,905  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-10 16:18:29,228  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 16:18:29,540  INFO (msg:90) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-10 16:18:29,542  INFO (msg:90) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-10 16:18:29,542  INFO (msg:44) - 服务加载完毕
+2018-01-10 16:18:29,543  INFO (msg:46) - 定时调度已启动
+2018-01-10 16:18:29,543  INFO (msg:51) - 服务启动完毕
+2018-01-10 16:19:29,344  INFO (msg:35) - 
+2018-01-10 16:19:29,352  INFO (msg:36) - ################################################################################
+2018-01-10 16:19:29,352  INFO (msg:37) - ################################################################################
+2018-01-10 16:19:29,353  INFO (msg:38) - ################################################################################
+2018-01-10 16:19:29,353  INFO (msg:39) - Welcome to seasons!!!
+2018-01-10 16:19:29,353  INFO (msg:40) - ################################################################################
+2018-01-10 16:19:29,354  INFO (msg:41) - ################################################################################
+2018-01-10 16:19:29,354  INFO (msg:42) - ################################################################################
+2018-01-10 16:19:29,358  INFO (msg:43) - 
+2018-01-10 16:19:29,359  INFO (msg:44) - 开始启动服务
+2018-01-10 16:19:29,360  INFO (msg:47) - 配置加载完毕
+2018-01-10 16:19:29,369  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-10 16:19:29,371  INFO (msg:33) - 开始初始化WebSocketService服务
+2018-01-10 16:19:29,373  INFO (msg:36) - 开始初始化DBManagerService服务
+2018-01-10 16:19:29,376  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-10 16:19:29,389  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-10 16:19:29,667  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 16:19:29,969  INFO (msg:90) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-10 16:19:29,975  INFO (msg:90) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-10 16:19:29,977  INFO (msg:49) - 服务加载完毕
+2018-01-10 16:19:29,977  INFO (msg:51) - 定时调度已启动
+2018-01-10 16:19:29,977  INFO (msg:56) - 服务启动完毕
+2018-01-10 16:20:53,855  INFO (msg:35) - 
+2018-01-10 16:20:53,863  INFO (msg:36) - ################################################################################
+2018-01-10 16:20:53,864  INFO (msg:37) - ################################################################################
+2018-01-10 16:20:53,864  INFO (msg:38) - ################################################################################
+2018-01-10 16:20:53,864  INFO (msg:39) - Welcome to seasons!!!
+2018-01-10 16:20:53,865  INFO (msg:40) - ################################################################################
+2018-01-10 16:20:53,865  INFO (msg:41) - ################################################################################
+2018-01-10 16:20:53,866  INFO (msg:42) - ################################################################################
+2018-01-10 16:20:53,866  INFO (msg:43) - 
+2018-01-10 16:20:53,866  INFO (msg:44) - 开始启动服务
+2018-01-10 16:20:53,867  INFO (msg:47) - 配置加载完毕
+2018-01-10 16:20:53,879  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-10 16:20:53,882  INFO (msg:33) - 开始初始化WebSocketService服务
+2018-01-10 16:20:53,883  INFO (msg:36) - 开始初始化DBManagerService服务
+2018-01-10 16:20:53,884  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-10 16:20:53,887  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-10 16:20:54,324  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 16:20:54,599  INFO (msg:90) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-10 16:20:54,603  INFO (msg:90) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-10 16:20:54,603  INFO (msg:49) - 服务加载完毕
+2018-01-10 16:20:54,604  INFO (msg:51) - 定时调度已启动
+2018-01-10 16:20:54,604  INFO (msg:56) - 服务启动完毕
+2018-01-10 16:21:05,204  INFO (msg:35) - 
+2018-01-10 16:21:05,211  INFO (msg:36) - ################################################################################
+2018-01-10 16:21:05,212  INFO (msg:37) - ################################################################################
+2018-01-10 16:21:05,212  INFO (msg:38) - ################################################################################
+2018-01-10 16:21:05,212  INFO (msg:39) - 		Welcome to seasons!!!
+2018-01-10 16:21:05,212  INFO (msg:40) - ################################################################################
+2018-01-10 16:21:05,213  INFO (msg:41) - ################################################################################
+2018-01-10 16:21:05,213  INFO (msg:42) - ################################################################################
+2018-01-10 16:21:05,214  INFO (msg:43) - 
+2018-01-10 16:21:05,214  INFO (msg:44) - 开始启动服务
+2018-01-10 16:21:05,214  INFO (msg:47) - 配置加载完毕
+2018-01-10 16:21:05,225  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-10 16:21:05,228  INFO (msg:33) - 开始初始化WebSocketService服务
+2018-01-10 16:21:05,231  INFO (msg:36) - 开始初始化DBManagerService服务
+2018-01-10 16:21:05,234  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-10 16:21:05,237  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-10 16:21:05,465  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 16:21:05,854  INFO (msg:90) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-10 16:21:05,858  INFO (msg:90) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-10 16:21:05,859  INFO (msg:49) - 服务加载完毕
+2018-01-10 16:21:05,859  INFO (msg:51) - 定时调度已启动
+2018-01-10 16:21:05,860  INFO (msg:56) - 服务启动完毕
+2018-01-10 16:22:47,41  INFO (msg:35) - 
+2018-01-10 16:22:47,45  INFO (msg:36) - ################################################################################
+2018-01-10 16:22:47,45  INFO (msg:37) - ################################################################################
+2018-01-10 16:22:47,45  INFO (msg:38) - ################################################################################
+2018-01-10 16:22:47,56  INFO (msg:40) -                   Welcome to seasons!!!
+2018-01-10 16:22:47,57  INFO (msg:41) - ################################################################################
+2018-01-10 16:22:47,57  INFO (msg:42) - ################################################################################
+2018-01-10 16:22:47,57  INFO (msg:43) - ################################################################################
+2018-01-10 16:22:47,59  INFO (msg:44) - 
+2018-01-10 16:22:47,59  INFO (msg:45) - 开始启动服务
+2018-01-10 16:22:47,60  INFO (msg:48) - 配置加载完毕
+2018-01-10 16:22:47,69  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-10 16:22:47,72  INFO (msg:33) - 开始初始化WebSocketService服务
+2018-01-10 16:22:47,74  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-10 16:22:47,75  INFO (msg:36) - 开始初始化DBManagerService服务
+2018-01-10 16:22:47,84  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-10 16:22:47,392  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 16:22:47,678  INFO (msg:90) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-10 16:22:47,680  INFO (msg:90) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-10 16:22:47,681  INFO (msg:50) - 服务加载完毕
+2018-01-10 16:22:47,682  INFO (msg:52) - 定时调度已启动
+2018-01-10 16:22:47,682  INFO (msg:57) - 服务启动完毕
+2018-01-10 16:23:11,165  INFO (msg:35) - 
+2018-01-10 16:23:11,172  INFO (msg:36) - ################################################################################
+2018-01-10 16:23:11,172  INFO (msg:37) - ################################################################################
+2018-01-10 16:23:11,172  INFO (msg:38) - ################################################################################
+2018-01-10 16:23:11,173  INFO (msg:40) -                                                           Welcome to seasons!!!
+2018-01-10 16:23:11,173  INFO (msg:41) - ################################################################################
+2018-01-10 16:23:11,173  INFO (msg:42) - ################################################################################
+2018-01-10 16:23:11,174  INFO (msg:43) - ################################################################################
+2018-01-10 16:23:11,177  INFO (msg:44) - 
+2018-01-10 16:23:11,177  INFO (msg:45) - 开始启动服务
+2018-01-10 16:23:11,178  INFO (msg:48) - 配置加载完毕
+2018-01-10 16:23:11,189  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-10 16:23:11,191  INFO (msg:33) - 开始初始化WebSocketService服务
+2018-01-10 16:23:11,193  INFO (msg:36) - 开始初始化DBManagerService服务
+2018-01-10 16:23:11,199  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-10 16:23:11,203  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-10 16:23:11,547  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 16:23:11,968  INFO (msg:90) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-10 16:23:11,970  INFO (msg:90) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-10 16:23:11,971  INFO (msg:50) - 服务加载完毕
+2018-01-10 16:23:11,971  INFO (msg:52) - 定时调度已启动
+2018-01-10 16:23:11,971  INFO (msg:57) - 服务启动完毕
+2018-01-10 16:23:47,142  INFO (msg:35) - 
+2018-01-10 16:23:47,149  INFO (msg:36) - ################################################################################
+2018-01-10 16:23:47,149  INFO (msg:37) - ################################################################################
+2018-01-10 16:23:47,149  INFO (msg:38) - 
+2018-01-10 16:23:47,150  INFO (msg:40) -                                                           Welcome to seasons!!!
+2018-01-10 16:23:47,150  INFO (msg:41) - 
+2018-01-10 16:23:47,151  INFO (msg:42) - ################################################################################
+2018-01-10 16:23:47,151  INFO (msg:43) - ################################################################################
+2018-01-10 16:23:47,154  INFO (msg:44) - 
+2018-01-10 16:23:47,154  INFO (msg:45) - 开始启动服务
+2018-01-10 16:23:47,158  INFO (msg:48) - 配置加载完毕
+2018-01-10 16:23:47,166  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-10 16:23:47,169  INFO (msg:33) - 开始初始化WebSocketService服务
+2018-01-10 16:23:47,169  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-10 16:23:47,174  INFO (msg:36) - 开始初始化DBManagerService服务
+2018-01-10 16:23:47,175  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-10 16:23:47,494  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 16:23:47,771  INFO (msg:90) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-10 16:23:47,783  INFO (msg:90) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-10 16:23:47,783  INFO (msg:50) - 服务加载完毕
+2018-01-10 16:23:47,784  INFO (msg:52) - 定时调度已启动
+2018-01-10 16:23:47,784  INFO (msg:57) - 服务启动完毕
+2018-01-10 16:25:01,266  INFO (msg:35) - 
+2018-01-10 16:25:01,272  INFO (msg:36) - ################################################################################
+2018-01-10 16:25:01,273  INFO (msg:37) - ################################################################################
+2018-01-10 16:25:01,273  INFO (msg:38) - 
+2018-01-10 16:25:01,274  INFO (msg:40) -                                                           Welcome to seasons!!!
+2018-01-10 16:25:01,274  INFO (msg:41) - 
+2018-01-10 16:25:01,274  INFO (msg:42) - ################################################################################
+2018-01-10 16:25:01,275  INFO (msg:43) - ################################################################################
+2018-01-10 16:25:01,275  INFO (msg:44) - 
+2018-01-10 16:25:01,275  INFO (msg:49) - 开始启动服务
+2018-01-10 16:25:01,276  INFO (msg:52) - 配置加载完毕
+2018-01-10 16:25:01,287  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-10 16:25:01,288  INFO (msg:33) - 开始初始化WebSocketService服务
+2018-01-10 16:25:01,289  INFO (msg:36) - 开始初始化DBManagerService服务
+2018-01-10 16:25:01,289  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-10 16:25:01,294  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-10 16:25:01,643  INFO (msg:26) - 开始初始化ConfigLoadService服务
+2018-01-10 16:25:01,936  INFO (msg:90) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-10 16:25:01,938  INFO (msg:90) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-10 16:25:01,938  INFO (msg:54) - 服务加载完毕
+2018-01-10 16:25:01,939  INFO (msg:56) - 定时调度已启动
+2018-01-10 16:25:01,939  INFO (msg:61) - 服务启动完毕
