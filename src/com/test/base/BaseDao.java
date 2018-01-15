@@ -1,5 +1,7 @@
 package com.test.base;
 
+import org.apache.ibatis.session.SqlSessionFactory;
+
 import com.ibatis.sqlmap.client.SqlMapClient;
 
 /**
@@ -13,9 +15,14 @@ import com.ibatis.sqlmap.client.SqlMapClient;
 
 public class BaseDao {
 	protected static SqlMapClient sqlClient;
+	protected static SqlSessionFactory sqlSessionFactory;
 
 	public static void initSqlMap(SqlMapClient sql) {
 		sqlClient = sql;
+	}
+
+	public static void initSqlFactory(SqlSessionFactory factory) {
+		sqlSessionFactory = factory;
 	}
 
 }

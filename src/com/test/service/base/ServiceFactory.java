@@ -17,4 +17,6 @@ public abstract class ServiceFactory {
 	public abstract BaseServerService createDBService();
 
 	public abstract BaseServerService createConfigLoadService();
+
+	public abstract BaseServerService createPropertiesLoadService();
 }

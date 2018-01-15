@@ -4,8 +4,7 @@ import java.util.List;
 
 import com.test.SeasonsStartServer;
 import com.test.service.base.AbstractBaseServerService;
-import com.test.service.base.BaseServerService.ServerState;
-import com.test.service.init.configInit.beans.TestBean;
+import com.test.service.init.configInit.csvBeans.TestBean;
 import com.test.tools.SeasonLogTools;
 
 /**
@@ -24,6 +23,7 @@ public class ConfigLoadService extends AbstractBaseServerService {
 	@Override
 	public void init() throws Exception {
 		SeasonLogTools.getLog().info("开始初始化ConfigLoadService服务");
+		setState(ServerState.starting);
 		tests = (List<TestBean>) new TestBean().getBeansByFile(
 				SeasonsStartServer.csvRoot + "test.csv", false);
 		setState(ServerState.started);

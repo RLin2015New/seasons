@@ -1,7 +1,8 @@
 package com.test.service.base;
 
-import com.test.service.db.mysql.DBManagerService;
+import com.test.service.db.mysql.mybatis.MybatisService;
 import com.test.service.init.configInit.ConfigLoadService;
+import com.test.service.init.configInit.PropertiesLoadService;
 import com.test.web.httpRequest.JettyServerService;
 import com.test.web.websocket.WebSocketService;
 
@@ -32,11 +33,20 @@ public class ServiceFactoryImpl extends ServiceFactory {
 		return new WebSocketService();
 	}
 
+	/**
+	 * 工厂模式的好处~，平滑的切换服务
+	 */
 	public BaseServerService createDBService() {
-		return new DBManagerService();
+//		return new IbatisService();
+		 return new MybatisService();
 	}
 
 	public BaseServerService createConfigLoadService() {
 		return new ConfigLoadService();
+	}
+
+	@Override
+	public BaseServerService createPropertiesLoadService() {
+		return new PropertiesLoadService();
 	}
 }

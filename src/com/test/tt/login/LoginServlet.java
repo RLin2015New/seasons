@@ -1,12 +1,6 @@
 package com.test.tt.login;
 
-import java.io.IOException;
-
-import javax.servlet.Servlet;
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServlet;
 
 /**
  * @projectName seasons
@@ -17,54 +11,11 @@ import javax.servlet.ServletResponse;
  *
  */
 
-public class LoginServlet implements Servlet {
+public class LoginServlet extends HttpServlet {
 
-	@Override
-	public void destroy() {
-		/**
-		 * method statement
-		 */
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public ServletConfig getServletConfig() {
-		/**
-		 * method statement
-		 */
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public String getServletInfo() {
-		/**
-		 * method statement
-		 */
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void init(ServletConfig arg0) throws ServletException {
-		/**
-		 * method statement
-		 */
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void service(ServletRequest arg0, ServletResponse arg1)
-			throws ServletException, IOException {
-		/**
-		 * method statement
-		 */
-		// TODO Auto-generated method stub
-
-	}
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -764379266927174141L;
 
 }
-
-

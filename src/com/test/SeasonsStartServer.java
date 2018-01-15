@@ -24,23 +24,31 @@ public class SeasonsStartServer {
 	public static String configRoot = "config" + File.separator;
 	public static String csvRoot = "resource" + File.separator + "csv"
 			+ File.separator;
-	public static String ibatisRoot = "resource" + File.separator + "ibatis"
-			+ File.separator;
-
+	public static String ibatisRoot = "configuration" + File.separator
+			+ "ibatis" + File.separator;
+	public static String mabatisRoot = "configuration" + File.separator
+			+ "mybatis" + File.separator;
 	private static SeasonConfig config;
 	private static SeasonService service;
 	private static SeasonSchema schema;
-	
-	public static void printWelcome(){
+
+	public static void printWelcome() {
 		SeasonLogTools.getLog().info("");
-		SeasonLogTools.getLog().info(StringTools.fullFillToLength("", 40, "##", false));
-		SeasonLogTools.getLog().info(StringTools.fullFillToLength("", 40, "##", true));
+		SeasonLogTools.getLog().info(
+				StringTools.fullFillToLength("", 40, "##", false));
+		SeasonLogTools.getLog().info(
+				StringTools.fullFillToLength("", 40, "##", true));
 		SeasonLogTools.getLog().info("");
 		String welcome = "Welcome to seasons!!!";
-		SeasonLogTools.getLog().info(StringTools.fullFillToLength("", (int)Math.floor((80-welcome.length())/2), "  ", true)+welcome);
+		SeasonLogTools.getLog().info(
+				StringTools.fullFillToLength("",
+						(int) Math.floor((80 - welcome.length()) / 2), "  ",
+						true) + welcome);
 		SeasonLogTools.getLog().info("");
-		SeasonLogTools.getLog().info(StringTools.fullFillToLength("", 40, "##", true));
-		SeasonLogTools.getLog().info(StringTools.fullFillToLength("", 40, "##", true));
+		SeasonLogTools.getLog().info(
+				StringTools.fullFillToLength("", 40, "##", true));
+		SeasonLogTools.getLog().info(
+				StringTools.fullFillToLength("", 40, "##", true));
 		SeasonLogTools.getLog().info("");
 	}
 
@@ -139,17 +147,21 @@ public class SeasonsStartServer {
 			dbService = ServiceFactoryImpl.getInstance().createDBService();
 			configLoadService = ServiceFactoryImpl.getInstance()
 					.createConfigLoadService();
+			// propertiesLoadService = ServiceFactoryImpl.getInstance()
+			// .createPropertiesLoadService();
 			// 初始化
 			httpService.init();
 			websocketService.init();
 			dbService.init();
 			configLoadService.init();
+			// propertiesLoadService.init();
 		}
 
 		private BaseServerService httpService;
 		private BaseServerService websocketService;
 		private BaseServerService dbService;
 		private BaseServerService configLoadService;
+		// private BaseServerService propertiesLoadService;
 	}
 
 	public static class SeasonSchema {
