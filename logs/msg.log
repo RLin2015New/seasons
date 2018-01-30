@@ -1,1632 +1,253 @@
-2018-01-15 15:33:25,750  INFO (msg:36) - 
-2018-01-15 15:33:25,762  INFO (msg:37) - ################################################################################
-2018-01-15 15:33:25,762  INFO (msg:39) - ################################################################################
-2018-01-15 15:33:25,763  INFO (msg:41) - 
-2018-01-15 15:33:25,763  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 15:33:25,763  INFO (msg:47) - 
-2018-01-15 15:33:25,763  INFO (msg:48) - ################################################################################
-2018-01-15 15:33:25,764  INFO (msg:50) - ################################################################################
-2018-01-15 15:33:25,765  INFO (msg:52) - 
-2018-01-15 15:33:25,765  INFO (msg:57) - 开始启动服务
-2018-01-15 15:33:25,766  INFO (msg:60) - 配置加载完毕
-2018-01-15 15:33:25,774  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 15:33:25,776  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 15:33:25,780  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 15:33:25,782  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 15:33:26,245 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error building SqlSession.
-### The error may exist in org/mybatis/example/BlogMapper.xml
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource org/mybatis/example/BlogMapper.xml
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:33)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource org/mybatis/example/BlogMapper.xml
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
-	... 5 more
-Caused by: java.io.IOException: Could not find resource org/mybatis/example/BlogMapper.xml
-	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114)
-	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:371)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
-	... 7 more
-2018-01-15 15:33:26,246  INFO (msg:69) - 服务启动完毕
-2018-01-15 15:35:24,741  INFO (msg:36) - 
-2018-01-15 15:35:24,745  INFO (msg:37) - ################################################################################
-2018-01-15 15:35:24,746  INFO (msg:39) - ################################################################################
-2018-01-15 15:35:24,746  INFO (msg:41) - 
-2018-01-15 15:35:24,747  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 15:35:24,747  INFO (msg:47) - 
-2018-01-15 15:35:24,747  INFO (msg:48) - ################################################################################
-2018-01-15 15:35:24,748  INFO (msg:50) - ################################################################################
-2018-01-15 15:35:24,748  INFO (msg:52) - 
-2018-01-15 15:35:24,748  INFO (msg:57) - 开始启动服务
-2018-01-15 15:35:24,749  INFO (msg:60) - 配置加载完毕
-2018-01-15 15:35:24,767  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 15:35:24,771  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 15:35:24,777  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 15:35:24,777  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 15:35:25,91 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error building SqlSession.
-### The error may exist in resource/mybatis/mapper/testBean.xml
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource resource/mybatis/mapper/testBean.xml
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:33)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource resource/mybatis/mapper/testBean.xml
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
-	... 5 more
-Caused by: java.io.IOException: Could not find resource resource/mybatis/mapper/testBean.xml
-	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114)
-	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:371)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
-	... 7 more
-2018-01-15 15:35:25,93  INFO (msg:69) - 服务启动完毕
-2018-01-15 15:36:52,540  INFO (msg:36) - 
-2018-01-15 15:36:52,544  INFO (msg:37) - ################################################################################
-2018-01-15 15:36:52,544  INFO (msg:39) - ################################################################################
-2018-01-15 15:36:52,545  INFO (msg:41) - 
-2018-01-15 15:36:52,545  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 15:36:52,545  INFO (msg:47) - 
-2018-01-15 15:36:52,546  INFO (msg:48) - ################################################################################
-2018-01-15 15:36:52,546  INFO (msg:50) - ################################################################################
-2018-01-15 15:36:52,547  INFO (msg:52) - 
-2018-01-15 15:36:52,547  INFO (msg:57) - 开始启动服务
-2018-01-15 15:36:52,547  INFO (msg:60) - 配置加载完毕
-2018-01-15 15:36:52,563  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 15:36:52,565  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 15:36:52,568  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 15:36:52,569  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 15:36:52,927 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error building SqlSession.
-### The error may exist in /resource/mybatis/mapper/testBean.xml
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource /resource/mybatis/mapper/testBean.xml
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:33)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource /resource/mybatis/mapper/testBean.xml
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
-	... 5 more
-Caused by: java.io.IOException: Could not find resource /resource/mybatis/mapper/testBean.xml
-	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114)
-	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:371)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
-	... 7 more
-2018-01-15 15:36:52,929  INFO (msg:69) - 服务启动完毕
-2018-01-15 15:37:34,646  INFO (msg:36) - 
-2018-01-15 15:37:34,651  INFO (msg:37) - ################################################################################
-2018-01-15 15:37:34,651  INFO (msg:39) - ################################################################################
-2018-01-15 15:37:34,651  INFO (msg:41) - 
-2018-01-15 15:37:34,652  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 15:37:34,652  INFO (msg:47) - 
-2018-01-15 15:37:34,655  INFO (msg:48) - ################################################################################
-2018-01-15 15:37:34,657  INFO (msg:50) - ################################################################################
-2018-01-15 15:37:34,659  INFO (msg:52) - 
-2018-01-15 15:37:34,664  INFO (msg:57) - 开始启动服务
-2018-01-15 15:37:34,664  INFO (msg:60) - 配置加载完毕
-2018-01-15 15:37:34,678  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 15:37:34,679  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 15:37:34,683  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 15:37:34,704  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 15:37:35,183 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error building SqlSession.
-### The error may exist in mybatis/mapper/testBean.xml
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: Blog
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:33)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: Blog
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
-	... 5 more
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: Blog
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:373)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
-	... 7 more
-Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: Blog
-	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
-	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:74)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:128)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
-	... 10 more
-Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: Blog
-	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
-	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
-	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
-	... 14 more
-Caused by: java.lang.ClassNotFoundException: Cannot find class: Blog
-	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
-	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
-	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
-	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
-	... 16 more
-2018-01-15 15:37:35,190  INFO (msg:69) - 服务启动完毕
-2018-01-15 15:40:22,567  INFO (msg:36) - 
-2018-01-15 15:40:22,572  INFO (msg:37) - ################################################################################
-2018-01-15 15:40:22,572  INFO (msg:39) - ################################################################################
-2018-01-15 15:40:22,573  INFO (msg:41) - 
-2018-01-15 15:40:22,573  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 15:40:22,573  INFO (msg:47) - 
-2018-01-15 15:40:22,573  INFO (msg:48) - ################################################################################
-2018-01-15 15:40:22,574  INFO (msg:50) - ################################################################################
-2018-01-15 15:40:22,574  INFO (msg:52) - 
-2018-01-15 15:40:22,574  INFO (msg:57) - 开始启动服务
-2018-01-15 15:40:22,575  INFO (msg:60) - 配置加载完毕
-2018-01-15 15:40:22,582  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 15:40:22,583  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 15:40:22,586  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 15:40:22,595  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 15:40:22,966 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error building SqlSession.
-### The error may exist in mybatis/mapper/testBean.xml
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 67; 需要属性 "type", 并且必须为元素类型 "resultMap" 指定该属性。
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:33)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 67; 需要属性 "type", 并且必须为元素类型 "resultMap" 指定该属性。
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
-	... 5 more
-Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 67; 需要属性 "type", 并且必须为元素类型 "resultMap" 指定该属性。
-	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
-	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:372)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
-	... 7 more
-Caused by: org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 67; 需要属性 "type", 并且必须为元素类型 "resultMap" 指定该属性。
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
-	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.addDTDDefaultAttrsAndValidate(XMLDTDValidator.java:1171)
-	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleStartElement(XMLDTDValidator.java:1917)
-	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement(XMLDTDValidator.java:742)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1359)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
-	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
-	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
-	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
-	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
-	... 11 more
-2018-01-15 15:40:22,972  INFO (msg:69) - 服务启动完毕
-2018-01-15 15:42:22,622  INFO (msg:36) - 
-2018-01-15 15:42:22,627  INFO (msg:37) - ################################################################################
-2018-01-15 15:42:22,627  INFO (msg:39) - ################################################################################
-2018-01-15 15:42:22,627  INFO (msg:41) - 
-2018-01-15 15:42:22,628  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 15:42:22,628  INFO (msg:47) - 
-2018-01-15 15:42:22,628  INFO (msg:48) - ################################################################################
-2018-01-15 15:42:22,628  INFO (msg:50) - ################################################################################
-2018-01-15 15:42:22,629  INFO (msg:52) - 
-2018-01-15 15:42:22,629  INFO (msg:57) - 开始启动服务
-2018-01-15 15:42:22,630  INFO (msg:60) - 配置加载完毕
-2018-01-15 15:42:22,640  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 15:42:22,641  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 15:42:22,645  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 15:42:22,648  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 15:42:23,19 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error building SqlSession.
-### The error may exist in mybatis/mapper/testBean.xml
-### The error occurred while processing mapper_resultMap[TestBean]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'TestBean'.  Cause: java.lang.ClassNotFoundException: Cannot find class: TestBean
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:33)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'TestBean'.  Cause: java.lang.ClassNotFoundException: Cannot find class: TestBean
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
-	... 5 more
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'TestBean'.  Cause: java.lang.ClassNotFoundException: Cannot find class: TestBean
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:373)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
-	... 7 more
-Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'TestBean'.  Cause: java.lang.ClassNotFoundException: Cannot find class: TestBean
-	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
-	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:74)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:128)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
-	... 10 more
-Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'TestBean'.  Cause: java.lang.ClassNotFoundException: Cannot find class: TestBean
-	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
-	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
-	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
-	... 14 more
-Caused by: java.lang.ClassNotFoundException: Cannot find class: TestBean
-	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
-	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
-	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
-	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
-	... 16 more
-2018-01-15 15:42:23,23  INFO (msg:69) - 服务启动完毕
-2018-01-15 15:43:02,775  INFO (msg:36) - 
-2018-01-15 15:43:02,779  INFO (msg:37) - ################################################################################
-2018-01-15 15:43:02,779  INFO (msg:39) - ################################################################################
-2018-01-15 15:43:02,779  INFO (msg:41) - 
-2018-01-15 15:43:02,780  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 15:43:02,780  INFO (msg:47) - 
-2018-01-15 15:43:02,780  INFO (msg:48) - ################################################################################
-2018-01-15 15:43:02,781  INFO (msg:50) - ################################################################################
-2018-01-15 15:43:02,781  INFO (msg:52) - 
-2018-01-15 15:43:02,781  INFO (msg:57) - 开始启动服务
-2018-01-15 15:43:02,782  INFO (msg:60) - 配置加载完毕
-2018-01-15 15:43:02,790  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 15:43:02,791  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 15:43:02,792  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 15:43:02,793  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 15:43:03,260 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error building SqlSession.
-### The error may exist in mybatis/mapper/testBean.xml
-### The error occurred while processing mapper_resultMap[testBean]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'testBean'.  Cause: java.lang.ClassNotFoundException: Cannot find class: testBean
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:33)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'testBean'.  Cause: java.lang.ClassNotFoundException: Cannot find class: testBean
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
-	... 5 more
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'testBean'.  Cause: java.lang.ClassNotFoundException: Cannot find class: testBean
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:373)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
-	... 7 more
-Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'testBean'.  Cause: java.lang.ClassNotFoundException: Cannot find class: testBean
-	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
-	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:74)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:128)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
-	... 10 more
-Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'testBean'.  Cause: java.lang.ClassNotFoundException: Cannot find class: testBean
-	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
-	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
-	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
-	... 14 more
-Caused by: java.lang.ClassNotFoundException: Cannot find class: testBean
-	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
-	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
-	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
-	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
-	... 16 more
-2018-01-15 15:43:03,266  INFO (msg:69) - 服务启动完毕
-2018-01-15 15:45:56,786  INFO (msg:36) - 
-2018-01-15 15:45:56,791  INFO (msg:37) - ################################################################################
-2018-01-15 15:45:56,791  INFO (msg:39) - ################################################################################
-2018-01-15 15:45:56,791  INFO (msg:41) - 
-2018-01-15 15:45:56,792  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 15:45:56,792  INFO (msg:47) - 
-2018-01-15 15:45:56,793  INFO (msg:48) - ################################################################################
-2018-01-15 15:45:56,793  INFO (msg:50) - ################################################################################
-2018-01-15 15:45:56,794  INFO (msg:52) - 
-2018-01-15 15:45:56,794  INFO (msg:57) - 开始启动服务
-2018-01-15 15:45:56,794  INFO (msg:60) - 配置加载完毕
-2018-01-15 15:45:56,808  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 15:45:56,813  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 15:45:56,815  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 15:45:56,818  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 15:45:57,250 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for org.mybatis.example.BlogMapper.selectBlog
-### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for org.mybatis.example.BlogMapper.selectBlog
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:37)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for org.mybatis.example.BlogMapper.selectBlog
-	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
-	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
-	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
-	... 6 more
-2018-01-15 15:45:57,252  INFO (msg:69) - 服务启动完毕
-2018-01-15 15:48:28,965  INFO (msg:36) - 
-2018-01-15 15:48:28,968  INFO (msg:37) - ################################################################################
-2018-01-15 15:48:28,969  INFO (msg:39) - ################################################################################
-2018-01-15 15:48:28,969  INFO (msg:41) - 
-2018-01-15 15:48:28,970  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 15:48:28,970  INFO (msg:47) - 
-2018-01-15 15:48:28,971  INFO (msg:48) - ################################################################################
-2018-01-15 15:48:28,971  INFO (msg:50) - ################################################################################
-2018-01-15 15:48:28,972  INFO (msg:52) - 
-2018-01-15 15:48:28,973  INFO (msg:57) - 开始启动服务
-2018-01-15 15:48:28,974  INFO (msg:60) - 配置加载完毕
-2018-01-15 15:48:28,982  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 15:48:28,983  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 15:48:28,985  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 15:48:28,990  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 15:48:29,510 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.test.service.db.mysql.mybatis.mapper.getAnotherBean
-### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.test.service.db.mysql.mybatis.mapper.getAnotherBean
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:37)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.test.service.db.mysql.mybatis.mapper.getAnotherBean
-	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
-	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
-	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
-	... 6 more
-2018-01-15 15:48:29,513  INFO (msg:69) - 服务启动完毕
-2018-01-15 15:49:19,345  INFO (msg:36) - 
-2018-01-15 15:49:19,348  INFO (msg:37) - ################################################################################
-2018-01-15 15:49:19,349  INFO (msg:39) - ################################################################################
-2018-01-15 15:49:19,349  INFO (msg:41) - 
-2018-01-15 15:49:19,350  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 15:49:19,350  INFO (msg:47) - 
-2018-01-15 15:49:19,351  INFO (msg:48) - ################################################################################
-2018-01-15 15:49:19,352  INFO (msg:50) - ################################################################################
-2018-01-15 15:49:19,354  INFO (msg:52) - 
-2018-01-15 15:49:19,357  INFO (msg:57) - 开始启动服务
-2018-01-15 15:49:19,360  INFO (msg:60) - 配置加载完毕
-2018-01-15 15:49:19,369  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 15:49:19,371  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 15:49:19,372  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 15:49:19,377  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 15:49:19,870 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: java.sql.SQLException: Error setting driver on UnpooledDataSource. Cause: java.lang.ClassNotFoundException: Cannot find class: ${driver}
-### The error may exist in mybatis/mapper/testBean.xml
-### The error may involve com.test.service.db.mysql.mybatis.mapper.TestBeanMapper.getAnotherBean
-### The error occurred while executing a query
-### Cause: java.sql.SQLException: Error setting driver on UnpooledDataSource. Cause: java.lang.ClassNotFoundException: Cannot find class: ${driver}
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:38)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: java.sql.SQLException: Error setting driver on UnpooledDataSource. Cause: java.lang.ClassNotFoundException: Cannot find class: ${driver}
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.initializeDriver(UnpooledDataSource.java:221)
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:200)
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:196)
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.getConnection(UnpooledDataSource.java:93)
-	at org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:404)
-	at org.apache.ibatis.datasource.pooled.PooledDataSource.getConnection(PooledDataSource.java:90)
-	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:139)
-	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.getConnection(JdbcTransaction.java:61)
-	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
-	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
-	... 6 more
-2018-01-15 15:49:19,871  INFO (msg:69) - 服务启动完毕
-2018-01-15 15:52:26,649  INFO (msg:36) - 
-2018-01-15 15:52:26,659  INFO (msg:37) - ################################################################################
-2018-01-15 15:52:26,661  INFO (msg:39) - ################################################################################
-2018-01-15 15:52:26,661  INFO (msg:41) - 
-2018-01-15 15:52:26,662  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 15:52:26,662  INFO (msg:47) - 
-2018-01-15 15:52:26,663  INFO (msg:48) - ################################################################################
-2018-01-15 15:52:26,664  INFO (msg:50) - ################################################################################
-2018-01-15 15:52:26,665  INFO (msg:52) - 
-2018-01-15 15:52:26,665  INFO (msg:57) - 开始启动服务
-2018-01-15 15:52:26,666  INFO (msg:60) - 配置加载完毕
-2018-01-15 15:52:26,674  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 15:52:26,675  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 15:52:26,681  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 15:52:26,683  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 15:52:27,150 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: java.sql.SQLException: Error setting driver on UnpooledDataSource. Cause: java.lang.ClassNotFoundException: Cannot find class: ${jdbc.ClassDriver}
-### The error may exist in mybatis/mapper/testBean.xml
-### The error may involve com.test.service.db.mysql.mybatis.mapper.TestBeanMapper.getAnotherBean
-### The error occurred while executing a query
-### Cause: java.sql.SQLException: Error setting driver on UnpooledDataSource. Cause: java.lang.ClassNotFoundException: Cannot find class: ${jdbc.ClassDriver}
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:38)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: java.sql.SQLException: Error setting driver on UnpooledDataSource. Cause: java.lang.ClassNotFoundException: Cannot find class: ${jdbc.ClassDriver}
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.initializeDriver(UnpooledDataSource.java:221)
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:200)
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:196)
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.getConnection(UnpooledDataSource.java:93)
-	at org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:404)
-	at org.apache.ibatis.datasource.pooled.PooledDataSource.getConnection(PooledDataSource.java:90)
-	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:139)
-	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.getConnection(JdbcTransaction.java:61)
-	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
-	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
-	... 6 more
-2018-01-15 15:52:27,153  INFO (msg:69) - 服务启动完毕
-2018-01-15 15:55:11,170  INFO (msg:36) - 
-2018-01-15 15:55:11,177  INFO (msg:37) - ################################################################################
-2018-01-15 15:55:11,177  INFO (msg:39) - ################################################################################
-2018-01-15 15:55:11,178  INFO (msg:41) - 
-2018-01-15 15:55:11,178  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 15:55:11,179  INFO (msg:47) - 
-2018-01-15 15:55:11,179  INFO (msg:48) - ################################################################################
-2018-01-15 15:55:11,179  INFO (msg:50) - ################################################################################
-2018-01-15 15:55:11,181  INFO (msg:52) - 
-2018-01-15 15:55:11,182  INFO (msg:57) - 开始启动服务
-2018-01-15 15:55:11,183  INFO (msg:60) - 配置加载完毕
-2018-01-15 15:55:11,191  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 15:55:11,193  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 15:55:11,194  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 15:55:11,202  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 15:55:11,335 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error building SqlSession.
-### Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 元素类型为 "environment" 的内容必须匹配 "(transactionManager,dataSource)"。
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:33)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 元素类型为 "environment" 的内容必须匹配 "(transactionManager,dataSource)"。
-	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
-	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.<init>(XMLConfigBuilder.java:82)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:77)
-	... 5 more
-Caused by: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 元素类型为 "environment" 的内容必须匹配 "(transactionManager,dataSource)"。
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
-	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1994)
-	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:879)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2967)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
-	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
-	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
-	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
-	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+2018-01-26 16:08:32,963  INFO (msg:41) - 
+2018-01-26 16:08:32,972  INFO (msg:42) - ################################################################################
+2018-01-26 16:08:32,973  INFO (msg:44) - ################################################################################
+2018-01-26 16:08:32,973  INFO (msg:46) - 
+2018-01-26 16:08:32,974  INFO (msg:48) -                                                           Welcome to seasons!!!
+2018-01-26 16:08:32,974  INFO (msg:52) - 
+2018-01-26 16:08:32,975  INFO (msg:53) - ################################################################################
+2018-01-26 16:08:32,975  INFO (msg:55) - ################################################################################
+2018-01-26 16:08:32,975  INFO (msg:57) - 
+2018-01-26 16:08:32,975  INFO (msg:82) - 开始启动服务
+2018-01-26 16:08:32,976  INFO (msg:85) - 配置加载完毕
+2018-01-26 16:08:32,988  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-26 16:08:32,989  INFO (msg:34) - 开始初始化WebSocketService服务
+2018-01-26 16:08:32,996  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-26 16:08:33,1  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-26 16:08:33,861  INFO (msg:25) - 开始初始化ConfigLoadService服务
+2018-01-26 16:08:34,209  INFO (msg:92) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-26 16:08:34,211  INFO (msg:92) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-26 16:08:34,212  INFO (msg:24) - 停服钩子加载完毕
+2018-01-26 16:08:34,212  INFO (msg:25) - 开始加载memcached配置
+2018-01-26 16:08:34,218  INFO (msg:29) - 加载缓存配置完毕
+2018-01-26 16:08:36,240 ERROR (msg:49) - Shutdown service error:main
+java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at com.danga.MemCached.SockIOPool.<clinit>(SockIOPool.java:172)
+	at com.test.service.memcached.BaseMemcached.initPool(BaseMemcached.java:35)
+	at com.test.service.memcached.BaseMemcached.getClient(BaseMemcached.java:51)
+	at com.test.service.memcached.BaseMemcached.checkMemcached(BaseMemcached.java:69)
+	at com.test.service.memcached.MemcachedService.init(MemcachedService.java:30)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:208)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:186)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:86)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	... 8 more
-2018-01-15 15:55:11,338  INFO (msg:69) - 服务启动完毕
-2018-01-15 15:55:40,743  INFO (msg:36) - 
-2018-01-15 15:55:40,747  INFO (msg:37) - ################################################################################
-2018-01-15 15:55:40,747  INFO (msg:39) - ################################################################################
-2018-01-15 15:55:40,747  INFO (msg:41) - 
-2018-01-15 15:55:40,748  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 15:55:40,748  INFO (msg:47) - 
-2018-01-15 15:55:40,748  INFO (msg:48) - ################################################################################
-2018-01-15 15:55:40,749  INFO (msg:50) - ################################################################################
-2018-01-15 15:55:40,749  INFO (msg:52) - 
-2018-01-15 15:55:40,749  INFO (msg:57) - 开始启动服务
-2018-01-15 15:55:40,750  INFO (msg:60) - 配置加载完毕
-2018-01-15 15:55:40,767  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 15:55:40,768  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 15:55:40,772  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 15:55:40,775  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 15:55:41,34 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error building SqlSession.
-### The error may exist in SQL Mapper Configuration
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource config/jdbc.properties
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:33)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource config/jdbc.properties
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
-	... 5 more
-Caused by: java.io.IOException: Could not find resource config/jdbc.properties
-	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114)
-	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100)
-	at org.apache.ibatis.io.Resources.getResourceAsProperties(Resources.java:128)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.propertiesElement(XMLConfigBuilder.java:225)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:106)
-	... 7 more
-2018-01-15 15:55:41,36  INFO (msg:69) - 服务启动完毕
-2018-01-15 15:57:25,211  INFO (msg:36) - 
-2018-01-15 15:57:25,215  INFO (msg:37) - ################################################################################
-2018-01-15 15:57:25,215  INFO (msg:39) - ################################################################################
-2018-01-15 15:57:25,215  INFO (msg:41) - 
-2018-01-15 15:57:25,216  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 15:57:25,216  INFO (msg:47) - 
-2018-01-15 15:57:25,216  INFO (msg:48) - ################################################################################
-2018-01-15 15:57:25,217  INFO (msg:50) - ################################################################################
-2018-01-15 15:57:25,218  INFO (msg:52) - 
-2018-01-15 15:57:25,218  INFO (msg:57) - 开始启动服务
-2018-01-15 15:57:25,220  INFO (msg:60) - 配置加载完毕
-2018-01-15 15:57:25,227  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 15:57:25,228  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 15:57:25,229  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 15:57:25,230  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 15:57:25,363 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error building SqlSession.
-### Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 13; columnNumber: 123; 对实体 "useUnicode" 的引用必须以 ';' 分隔符结尾。
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:33)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 13; columnNumber: 123; 对实体 "useUnicode" 的引用必须以 ';' 分隔符结尾。
-	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
-	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.<init>(XMLConfigBuilder.java:82)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:77)
-	... 5 more
-Caused by: org.xml.sax.SAXParseException; lineNumber: 13; columnNumber: 123; 对实体 "useUnicode" 的引用必须以 ';' 分隔符结尾。
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
-	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
-	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanAttributeValue(XMLScanner.java:913)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanAttribute(XMLDocumentFragmentScannerImpl.java:1548)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1315)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
-	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
-	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
-	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
-	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+2018-01-26 16:10:59,245  INFO (msg:41) - 
+2018-01-26 16:10:59,250  INFO (msg:42) - ################################################################################
+2018-01-26 16:10:59,250  INFO (msg:44) - ################################################################################
+2018-01-26 16:10:59,250  INFO (msg:46) - 
+2018-01-26 16:10:59,251  INFO (msg:48) -                                                           Welcome to seasons!!!
+2018-01-26 16:10:59,251  INFO (msg:52) - 
+2018-01-26 16:10:59,252  INFO (msg:53) - ################################################################################
+2018-01-26 16:10:59,252  INFO (msg:55) - ################################################################################
+2018-01-26 16:10:59,252  INFO (msg:57) - 
+2018-01-26 16:10:59,252  INFO (msg:82) - 开始启动服务
+2018-01-26 16:10:59,253  INFO (msg:85) - 配置加载完毕
+2018-01-26 16:10:59,262  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-26 16:10:59,264  INFO (msg:34) - 开始初始化WebSocketService服务
+2018-01-26 16:10:59,266  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-26 16:10:59,267  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-26 16:10:59,957  INFO (msg:25) - 开始初始化ConfigLoadService服务
+2018-01-26 16:11:00,126  INFO (msg:92) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-26 16:11:00,128  INFO (msg:92) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-26 16:11:00,130  INFO (msg:24) - 停服钩子加载完毕
+2018-01-26 16:11:00,130  INFO (msg:25) - 开始加载memcached配置
+2018-01-26 16:11:00,132  INFO (msg:29) - 加载缓存配置完毕
+2018-01-26 16:11:02,287 ERROR (msg:49) - Shutdown service error:main
+java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at com.danga.MemCached.SockIOPool.<clinit>(SockIOPool.java:172)
+	at com.test.service.memcached.BaseMemcached.initPool(BaseMemcached.java:35)
+	at com.test.service.memcached.BaseMemcached.getClient(BaseMemcached.java:51)
+	at com.test.service.memcached.BaseMemcached.checkMemcached(BaseMemcached.java:69)
+	at com.test.service.memcached.MemcachedService.init(MemcachedService.java:30)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:208)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:186)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:86)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	... 8 more
-2018-01-15 15:57:25,367  INFO (msg:69) - 服务启动完毕
-2018-01-15 15:58:52,48  INFO (msg:36) - 
-2018-01-15 15:58:52,52  INFO (msg:37) - ################################################################################
-2018-01-15 15:58:52,53  INFO (msg:39) - ################################################################################
-2018-01-15 15:58:52,54  INFO (msg:41) - 
-2018-01-15 15:58:52,55  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 15:58:52,56  INFO (msg:47) - 
-2018-01-15 15:58:52,57  INFO (msg:48) - ################################################################################
-2018-01-15 15:58:52,58  INFO (msg:50) - ################################################################################
-2018-01-15 15:58:52,60  INFO (msg:52) - 
-2018-01-15 15:58:52,60  INFO (msg:57) - 开始启动服务
-2018-01-15 15:58:52,61  INFO (msg:60) - 配置加载完毕
-2018-01-15 15:58:52,73  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 15:58:52,75  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 15:58:52,77  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 15:58:52,81  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 15:58:52,226 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error building SqlSession.
-### Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 13; columnNumber: 123; 对实体 "useUnicode" 的引用必须以 ';' 分隔符结尾。
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:33)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 13; columnNumber: 123; 对实体 "useUnicode" 的引用必须以 ';' 分隔符结尾。
-	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
-	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.<init>(XMLConfigBuilder.java:82)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:77)
-	... 5 more
-Caused by: org.xml.sax.SAXParseException; lineNumber: 13; columnNumber: 123; 对实体 "useUnicode" 的引用必须以 ';' 分隔符结尾。
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
-	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
-	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanAttributeValue(XMLScanner.java:913)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanAttribute(XMLDocumentFragmentScannerImpl.java:1548)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1315)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
-	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
-	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
-	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
-	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
-	... 8 more
-2018-01-15 15:58:52,229  INFO (msg:69) - 服务启动完毕
-2018-01-15 15:59:07,837  INFO (msg:36) - 
-2018-01-15 15:59:07,842  INFO (msg:37) - ################################################################################
-2018-01-15 15:59:07,843  INFO (msg:39) - ################################################################################
-2018-01-15 15:59:07,843  INFO (msg:41) - 
-2018-01-15 15:59:07,844  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 15:59:07,844  INFO (msg:47) - 
-2018-01-15 15:59:07,844  INFO (msg:48) - ################################################################################
-2018-01-15 15:59:07,844  INFO (msg:50) - ################################################################################
-2018-01-15 15:59:07,845  INFO (msg:52) - 
-2018-01-15 15:59:07,845  INFO (msg:57) - 开始启动服务
-2018-01-15 15:59:07,845  INFO (msg:60) - 配置加载完毕
-2018-01-15 15:59:07,863  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 15:59:07,865  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 15:59:07,870  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 15:59:07,881  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 15:59:08,40 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error building SqlSession.
-### Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 13; columnNumber: 123; 对实体 "useUnicode" 的引用必须以 ';' 分隔符结尾。
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:33)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 13; columnNumber: 123; 对实体 "useUnicode" 的引用必须以 ';' 分隔符结尾。
-	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
-	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.<init>(XMLConfigBuilder.java:82)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:77)
-	... 5 more
-Caused by: org.xml.sax.SAXParseException; lineNumber: 13; columnNumber: 123; 对实体 "useUnicode" 的引用必须以 ';' 分隔符结尾。
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
-	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
-	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanAttributeValue(XMLScanner.java:913)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanAttribute(XMLDocumentFragmentScannerImpl.java:1548)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1315)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
-	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
-	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
-	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
-	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
-	... 8 more
-2018-01-15 15:59:08,67  INFO (msg:69) - 服务启动完毕
-2018-01-15 16:00:21,307  INFO (msg:36) - 
-2018-01-15 16:00:21,316  INFO (msg:37) - ################################################################################
-2018-01-15 16:00:21,316  INFO (msg:39) - ################################################################################
-2018-01-15 16:00:21,316  INFO (msg:41) - 
-2018-01-15 16:00:21,317  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 16:00:21,317  INFO (msg:47) - 
-2018-01-15 16:00:21,317  INFO (msg:48) - ################################################################################
-2018-01-15 16:00:21,318  INFO (msg:50) - ################################################################################
-2018-01-15 16:00:21,318  INFO (msg:52) - 
-2018-01-15 16:00:21,318  INFO (msg:57) - 开始启动服务
-2018-01-15 16:00:21,320  INFO (msg:60) - 配置加载完毕
-2018-01-15 16:00:21,327  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 16:00:21,329  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 16:00:21,330  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 16:00:21,333  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 16:00:21,768 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: java.sql.SQLException: No suitable driver found for jdbc\:mysql\://localhost\:3306/niuyouba?zeroDateTimeBehavior\=round;useUnicode\=true;characterEncoding\=utf-8
-### The error may exist in mybatis/mapper/testBean.xml
-### The error may involve com.test.service.db.mysql.mybatis.mapper.TestBeanMapper.getAnotherBean
-### The error occurred while executing a query
-### Cause: java.sql.SQLException: No suitable driver found for jdbc\:mysql\://localhost\:3306/niuyouba?zeroDateTimeBehavior\=round;useUnicode\=true;characterEncoding\=utf-8
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:38)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: java.sql.SQLException: No suitable driver found for jdbc\:mysql\://localhost\:3306/niuyouba?zeroDateTimeBehavior\=round;useUnicode\=true;characterEncoding\=utf-8
-	at java.sql.DriverManager.getConnection(DriverManager.java:689)
-	at java.sql.DriverManager.getConnection(DriverManager.java:208)
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:201)
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:196)
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.getConnection(UnpooledDataSource.java:93)
-	at org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:404)
-	at org.apache.ibatis.datasource.pooled.PooledDataSource.getConnection(PooledDataSource.java:90)
-	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:139)
-	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.getConnection(JdbcTransaction.java:61)
-	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
-	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
-	... 6 more
-2018-01-15 16:00:21,770  INFO (msg:69) - 服务启动完毕
-2018-01-15 16:01:47,13  INFO (msg:36) - 
-2018-01-15 16:01:47,17  INFO (msg:37) - ################################################################################
-2018-01-15 16:01:47,17  INFO (msg:39) - ################################################################################
-2018-01-15 16:01:47,17  INFO (msg:41) - 
-2018-01-15 16:01:47,18  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 16:01:47,18  INFO (msg:47) - 
-2018-01-15 16:01:47,18  INFO (msg:48) - ################################################################################
-2018-01-15 16:01:47,18  INFO (msg:50) - ################################################################################
-2018-01-15 16:01:47,19  INFO (msg:52) - 
-2018-01-15 16:01:47,19  INFO (msg:57) - 开始启动服务
-2018-01-15 16:01:47,20  INFO (msg:60) - 配置加载完毕
-2018-01-15 16:01:47,28  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 16:01:47,29  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 16:01:47,35  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 16:01:47,35  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 16:01:47,401 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error building SqlSession.
-### The error may exist in SQL Mapper Configuration
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.datasource.DataSourceException: Unknown DataSource property: driverClassName
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:33)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.datasource.DataSourceException: Unknown DataSource property: driverClassName
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
-	... 5 more
-Caused by: org.apache.ibatis.datasource.DataSourceException: Unknown DataSource property: driverClassName
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSourceFactory.setProperties(UnpooledDataSourceFactory.java:55)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.dataSourceElement(XMLConfigBuilder.java:326)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.environmentsElement(XMLConfigBuilder.java:280)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:116)
-	... 7 more
-2018-01-15 16:01:47,411  INFO (msg:69) - 服务启动完毕
-2018-01-15 16:02:35,983  INFO (msg:36) - 
-2018-01-15 16:02:35,988  INFO (msg:37) - ################################################################################
-2018-01-15 16:02:35,989  INFO (msg:39) - ################################################################################
-2018-01-15 16:02:35,989  INFO (msg:41) - 
-2018-01-15 16:02:35,989  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 16:02:35,990  INFO (msg:47) - 
-2018-01-15 16:02:35,990  INFO (msg:48) - ################################################################################
-2018-01-15 16:02:35,990  INFO (msg:50) - ################################################################################
-2018-01-15 16:02:35,991  INFO (msg:52) - 
-2018-01-15 16:02:35,991  INFO (msg:57) - 开始启动服务
-2018-01-15 16:02:35,992  INFO (msg:60) - 配置加载完毕
-2018-01-15 16:02:36,2  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 16:02:36,12  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 16:02:36,17  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 16:02:36,26  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 16:02:36,694 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: java.sql.SQLException: No suitable driver found for jdbc\:mysql\://localhost\:3306/niuyouba?zeroDateTimeBehavior\=round;useUnicode\=true;characterEncoding\=utf-8
-### The error may exist in mybatis/mapper/testBean.xml
-### The error may involve com.test.service.db.mysql.mybatis.mapper.TestBeanMapper.getAnotherBean
-### The error occurred while executing a query
-### Cause: java.sql.SQLException: No suitable driver found for jdbc\:mysql\://localhost\:3306/niuyouba?zeroDateTimeBehavior\=round;useUnicode\=true;characterEncoding\=utf-8
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:38)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: java.sql.SQLException: No suitable driver found for jdbc\:mysql\://localhost\:3306/niuyouba?zeroDateTimeBehavior\=round;useUnicode\=true;characterEncoding\=utf-8
-	at java.sql.DriverManager.getConnection(DriverManager.java:689)
-	at java.sql.DriverManager.getConnection(DriverManager.java:208)
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:201)
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:196)
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.getConnection(UnpooledDataSource.java:93)
-	at org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:404)
-	at org.apache.ibatis.datasource.pooled.PooledDataSource.getConnection(PooledDataSource.java:90)
-	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:139)
-	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.getConnection(JdbcTransaction.java:61)
-	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
-	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
-	... 6 more
-2018-01-15 16:02:36,722  INFO (msg:69) - 服务启动完毕
-2018-01-15 16:23:18,484  INFO (msg:36) - 
-2018-01-15 16:23:18,489  INFO (msg:37) - ################################################################################
-2018-01-15 16:23:18,489  INFO (msg:39) - ################################################################################
-2018-01-15 16:23:18,490  INFO (msg:41) - 
-2018-01-15 16:23:18,490  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 16:23:18,490  INFO (msg:47) - 
-2018-01-15 16:23:18,490  INFO (msg:48) - ################################################################################
-2018-01-15 16:23:18,491  INFO (msg:50) - ################################################################################
-2018-01-15 16:23:18,492  INFO (msg:52) - 
-2018-01-15 16:23:18,492  INFO (msg:57) - 开始启动服务
-2018-01-15 16:23:18,493  INFO (msg:60) - 配置加载完毕
-2018-01-15 16:23:18,500  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 16:23:18,502  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 16:23:18,511  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 16:23:18,511  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 16:23:19,5 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: java.sql.SQLException: No suitable driver found for jdbc\:mysql\://localhost\:3306/niuyouba?zeroDateTimeBehavior\=round;useUnicode\=true;characterEncoding\=utf-8
-### The error may exist in mybatis/mapper/testBean.xml
-### The error may involve com.test.service.db.mysql.mybatis.mapper.TestBeanMapper.getAnotherBean
-### The error occurred while executing a query
-### Cause: java.sql.SQLException: No suitable driver found for jdbc\:mysql\://localhost\:3306/niuyouba?zeroDateTimeBehavior\=round;useUnicode\=true;characterEncoding\=utf-8
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:38)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: java.sql.SQLException: No suitable driver found for jdbc\:mysql\://localhost\:3306/niuyouba?zeroDateTimeBehavior\=round;useUnicode\=true;characterEncoding\=utf-8
-	at java.sql.DriverManager.getConnection(DriverManager.java:689)
-	at java.sql.DriverManager.getConnection(DriverManager.java:208)
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:201)
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:196)
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.getConnection(UnpooledDataSource.java:93)
-	at org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:404)
-	at org.apache.ibatis.datasource.pooled.PooledDataSource.getConnection(PooledDataSource.java:90)
-	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:139)
-	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.getConnection(JdbcTransaction.java:61)
-	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
-	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
-	... 6 more
-2018-01-15 16:23:19,11  INFO (msg:69) - 服务启动完毕
-2018-01-15 16:26:05,476  INFO (msg:36) - 
-2018-01-15 16:26:05,480  INFO (msg:37) - ################################################################################
-2018-01-15 16:26:05,480  INFO (msg:39) - ################################################################################
-2018-01-15 16:26:05,480  INFO (msg:41) - 
-2018-01-15 16:26:05,481  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 16:26:05,481  INFO (msg:47) - 
-2018-01-15 16:26:05,481  INFO (msg:48) - ################################################################################
-2018-01-15 16:26:05,482  INFO (msg:50) - ################################################################################
-2018-01-15 16:26:05,482  INFO (msg:52) - 
-2018-01-15 16:26:05,482  INFO (msg:57) - 开始启动服务
-2018-01-15 16:26:05,483  INFO (msg:60) - 配置加载完毕
-2018-01-15 16:26:05,492  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 16:26:05,493  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 16:26:05,498  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 16:26:05,498  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 16:26:06,77 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: java.sql.SQLException: The connection property 'zeroDateTimeBehavior' only accepts values of the form: 'exception', 'round' or 'convertToNull'. The value 'round;useUnicode=true;characterEncoding=utf-8' is not in this set.
-### The error may exist in mybatis/mapper/testBean.xml
-### The error may involve com.test.service.db.mysql.mybatis.mapper.TestBeanMapper.getAnotherBean
-### The error occurred while executing a query
-### Cause: java.sql.SQLException: The connection property 'zeroDateTimeBehavior' only accepts values of the form: 'exception', 'round' or 'convertToNull'. The value 'round;useUnicode=true;characterEncoding=utf-8' is not in this set.
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:38)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: java.sql.SQLException: The connection property 'zeroDateTimeBehavior' only accepts values of the form: 'exception', 'round' or 'convertToNull'. The value 'round;useUnicode=true;characterEncoding=utf-8' is not in this set.
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1055)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
-	at com.mysql.jdbc.ConnectionPropertiesImpl$ConnectionProperty.validateStringValues(ConnectionPropertiesImpl.java:310)
-	at com.mysql.jdbc.ConnectionPropertiesImpl$StringConnectionProperty.initializeFrom(ConnectionPropertiesImpl.java:594)
-	at com.mysql.jdbc.ConnectionPropertiesImpl$ConnectionProperty.initializeFrom(ConnectionPropertiesImpl.java:209)
-	at com.mysql.jdbc.ConnectionPropertiesImpl.initializeProperties(ConnectionPropertiesImpl.java:2703)
-	at com.mysql.jdbc.ConnectionImpl.initializeDriverProperties(ConnectionImpl.java:3349)
-	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
-	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
-	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:352)
-	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:284)
-	at java.sql.DriverManager.getConnection(DriverManager.java:664)
-	at java.sql.DriverManager.getConnection(DriverManager.java:208)
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:201)
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:196)
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.getConnection(UnpooledDataSource.java:93)
-	at org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:404)
-	at org.apache.ibatis.datasource.pooled.PooledDataSource.getConnection(PooledDataSource.java:90)
-	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:139)
-	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.getConnection(JdbcTransaction.java:61)
-	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
-	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
-	... 6 more
-2018-01-15 16:26:06,79  INFO (msg:69) - 服务启动完毕
-2018-01-15 16:26:51,438  INFO (msg:36) - 
-2018-01-15 16:26:51,442  INFO (msg:37) - ################################################################################
-2018-01-15 16:26:51,442  INFO (msg:39) - ################################################################################
-2018-01-15 16:26:51,442  INFO (msg:41) - 
-2018-01-15 16:26:51,443  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 16:26:51,443  INFO (msg:47) - 
-2018-01-15 16:26:51,443  INFO (msg:48) - ################################################################################
-2018-01-15 16:26:51,443  INFO (msg:50) - ################################################################################
-2018-01-15 16:26:51,444  INFO (msg:52) - 
-2018-01-15 16:26:51,445  INFO (msg:57) - 开始启动服务
-2018-01-15 16:26:51,446  INFO (msg:60) - 配置加载完毕
-2018-01-15 16:26:51,457  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 16:26:51,461  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 16:26:51,465  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 16:26:51,467  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 16:26:51,578 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error building SqlSession.
-### Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 14; columnNumber: 87; 对实体 "useUnicode" 的引用必须以 ';' 分隔符结尾。
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:33)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 14; columnNumber: 87; 对实体 "useUnicode" 的引用必须以 ';' 分隔符结尾。
-	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
-	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.<init>(XMLConfigBuilder.java:82)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:77)
-	... 5 more
-Caused by: org.xml.sax.SAXParseException; lineNumber: 14; columnNumber: 87; 对实体 "useUnicode" 的引用必须以 ';' 分隔符结尾。
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
-	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
-	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanAttributeValue(XMLScanner.java:913)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanAttribute(XMLDocumentFragmentScannerImpl.java:1548)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1315)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
-	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
-	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
-	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
-	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
-	... 8 more
-2018-01-15 16:26:51,587  INFO (msg:69) - 服务启动完毕
-2018-01-15 16:27:14,314  INFO (msg:36) - 
-2018-01-15 16:27:14,317  INFO (msg:37) - ################################################################################
-2018-01-15 16:27:14,318  INFO (msg:39) - ################################################################################
-2018-01-15 16:27:14,318  INFO (msg:41) - 
-2018-01-15 16:27:14,319  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 16:27:14,319  INFO (msg:47) - 
-2018-01-15 16:27:14,319  INFO (msg:48) - ################################################################################
-2018-01-15 16:27:14,320  INFO (msg:50) - ################################################################################
-2018-01-15 16:27:14,321  INFO (msg:52) - 
-2018-01-15 16:27:14,321  INFO (msg:57) - 开始启动服务
-2018-01-15 16:27:14,323  INFO (msg:60) - 配置加载完毕
-2018-01-15 16:27:14,331  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 16:27:14,333  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 16:27:14,338  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 16:27:14,338  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 16:27:15,263 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: org.apache.ibatis.executor.result.ResultMapException: Error attempting to get column 'name' from result set.  Cause: java.sql.SQLException: Invalid value for getInt() - '十分'
-### The error may exist in mybatis/mapper/testBean.xml
-### The error may involve com.test.service.db.mysql.mybatis.mapper.TestBeanMapper.getAnotherBean
-### The error occurred while handling results
-### SQL: select * from user_inf   where   userId =   ?
-### Cause: org.apache.ibatis.executor.result.ResultMapException: Error attempting to get column 'name' from result set.  Cause: java.sql.SQLException: Invalid value for getInt() - '十分'
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:38)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: org.apache.ibatis.executor.result.ResultMapException: Error attempting to get column 'name' from result set.  Cause: java.sql.SQLException: Invalid value for getInt() - '十分'
-	at org.apache.ibatis.type.BaseTypeHandler.getResult(BaseTypeHandler.java:68)
-	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getPropertyMappingValue(DefaultResultSetHandler.java:467)
-	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:436)
-	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:399)
-	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:351)
-	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:326)
-	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:299)
-	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:192)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
-	... 6 more
-Caused by: java.sql.SQLException: Invalid value for getInt() - '十分'
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1055)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2705)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2793)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.ibatis.logging.jdbc.ResultSetLogger.invoke(ResultSetLogger.java:68)
-	at com.sun.proxy.$Proxy5.getInt(Unknown Source)
-	at org.apache.ibatis.type.IntegerTypeHandler.getNullableResult(IntegerTypeHandler.java:37)
-	at org.apache.ibatis.type.IntegerTypeHandler.getNullableResult(IntegerTypeHandler.java:26)
-	at org.apache.ibatis.type.BaseTypeHandler.getResult(BaseTypeHandler.java:66)
-	... 21 more
-2018-01-15 16:27:15,265  INFO (msg:69) - 服务启动完毕
-2018-01-15 16:27:53,282  INFO (msg:36) - 
-2018-01-15 16:27:53,287  INFO (msg:37) - ################################################################################
-2018-01-15 16:27:53,287  INFO (msg:39) - ################################################################################
-2018-01-15 16:27:53,287  INFO (msg:41) - 
-2018-01-15 16:27:53,288  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 16:27:53,288  INFO (msg:47) - 
-2018-01-15 16:27:53,288  INFO (msg:48) - ################################################################################
-2018-01-15 16:27:53,289  INFO (msg:50) - ################################################################################
-2018-01-15 16:27:53,289  INFO (msg:52) - 
-2018-01-15 16:27:53,289  INFO (msg:57) - 开始启动服务
-2018-01-15 16:27:53,290  INFO (msg:60) - 配置加载完毕
-2018-01-15 16:27:53,297  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 16:27:53,298  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 16:27:53,299  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 16:27:53,304  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 16:27:54,15  INFO (msg:25) - 开始初始化ConfigLoadService服务
-2018-01-15 16:27:54,249  INFO (msg:92) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
-2018-01-15 16:27:54,251  INFO (msg:92) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
-2018-01-15 16:27:54,251  INFO (msg:62) - 服务加载完毕
-2018-01-15 16:27:54,251  INFO (msg:64) - 定时调度已启动
-2018-01-15 16:27:54,252  INFO (msg:69) - 服务启动完毕
-2018-01-15 16:28:27,760  INFO (msg:36) - 
-2018-01-15 16:28:27,766  INFO (msg:37) - ################################################################################
-2018-01-15 16:28:27,767  INFO (msg:39) - ################################################################################
-2018-01-15 16:28:27,767  INFO (msg:41) - 
-2018-01-15 16:28:27,767  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 16:28:27,768  INFO (msg:47) - 
-2018-01-15 16:28:27,768  INFO (msg:48) - ################################################################################
-2018-01-15 16:28:27,768  INFO (msg:50) - ################################################################################
-2018-01-15 16:28:27,769  INFO (msg:52) - 
-2018-01-15 16:28:27,769  INFO (msg:57) - 开始启动服务
-2018-01-15 16:28:27,770  INFO (msg:60) - 配置加载完毕
-2018-01-15 16:28:27,778  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 16:28:27,779  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 16:28:27,781  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 16:28:27,784  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 16:28:28,503  INFO (msg:25) - 开始初始化ConfigLoadService服务
-2018-01-15 16:28:28,708  INFO (msg:92) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
-2018-01-15 16:28:28,710  INFO (msg:92) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
-2018-01-15 16:28:28,710  INFO (msg:62) - 服务加载完毕
-2018-01-15 16:28:28,710  INFO (msg:64) - 定时调度已启动
-2018-01-15 16:28:28,710  INFO (msg:69) - 服务启动完毕
-2018-01-15 16:33:55,726  INFO (msg:36) - 
-2018-01-15 16:33:55,731  INFO (msg:37) - ################################################################################
-2018-01-15 16:33:55,731  INFO (msg:39) - ################################################################################
-2018-01-15 16:33:55,731  INFO (msg:41) - 
-2018-01-15 16:33:55,732  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 16:33:55,732  INFO (msg:47) - 
-2018-01-15 16:33:55,732  INFO (msg:48) - ################################################################################
-2018-01-15 16:33:55,733  INFO (msg:50) - ################################################################################
-2018-01-15 16:33:55,733  INFO (msg:52) - 
-2018-01-15 16:33:55,733  INFO (msg:57) - 开始启动服务
-2018-01-15 16:33:55,734  INFO (msg:60) - 配置加载完毕
-2018-01-15 16:33:55,741  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 16:33:55,742  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 16:33:55,743  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 16:33:55,748  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 16:33:56,482  INFO (msg:25) - 开始初始化ConfigLoadService服务
-2018-01-15 16:33:56,694  INFO (msg:92) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
-2018-01-15 16:33:56,696  INFO (msg:92) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
-2018-01-15 16:33:56,697  INFO (msg:62) - 服务加载完毕
-2018-01-15 16:33:56,697  INFO (msg:64) - 定时调度已启动
-2018-01-15 16:33:56,697  INFO (msg:69) - 服务启动完毕
-2018-01-15 16:48:48,115  INFO (msg:36) - 
-2018-01-15 16:48:48,118  INFO (msg:37) - ################################################################################
-2018-01-15 16:48:48,119  INFO (msg:39) - ################################################################################
-2018-01-15 16:48:48,119  INFO (msg:41) - 
-2018-01-15 16:48:48,120  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 16:48:48,120  INFO (msg:47) - 
-2018-01-15 16:48:48,120  INFO (msg:48) - ################################################################################
-2018-01-15 16:48:48,121  INFO (msg:50) - ################################################################################
-2018-01-15 16:48:48,121  INFO (msg:52) - 
-2018-01-15 16:48:48,121  INFO (msg:57) - 开始启动服务
-2018-01-15 16:48:48,122  INFO (msg:60) - 配置加载完毕
-2018-01-15 16:48:48,130  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 16:48:48,131  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 16:48:48,133  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 16:48:48,134  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 16:48:48,138 ERROR (msg:67) - 服务启动出错
-java.io.IOException: Could not find resource resource\mybatis\mybatis-config.xml
-	at com.ibatis.common.resources.Resources.getResourceAsStream(Resources.java:110)
-	at com.ibatis.common.resources.Resources.getResourceAsStream(Resources.java:95)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:32)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-2018-01-15 16:48:48,141  INFO (msg:69) - 服务启动完毕
-2018-01-15 16:49:57,977  INFO (msg:36) - 
-2018-01-15 16:49:57,981  INFO (msg:37) - ################################################################################
-2018-01-15 16:49:57,981  INFO (msg:39) - ################################################################################
-2018-01-15 16:49:57,982  INFO (msg:41) - 
-2018-01-15 16:49:57,982  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 16:49:57,982  INFO (msg:47) - 
-2018-01-15 16:49:57,982  INFO (msg:48) - ################################################################################
-2018-01-15 16:49:57,983  INFO (msg:50) - ################################################################################
-2018-01-15 16:49:57,983  INFO (msg:52) - 
-2018-01-15 16:49:57,984  INFO (msg:57) - 开始启动服务
-2018-01-15 16:49:57,985  INFO (msg:60) - 配置加载完毕
-2018-01-15 16:49:57,992  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 16:49:57,993  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 16:49:57,994  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 16:49:57,999  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 16:49:58,391 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error building SqlSession.
-### The error may exist in mybatis/mapper/testBean.xml
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource mybatis/mapper/testBean.xml
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:80)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:72)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:54)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource mybatis/mapper/testBean.xml
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
-	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
-	... 5 more
-Caused by: java.io.IOException: Could not find resource mybatis/mapper/testBean.xml
-	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114)
-	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:371)
-	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
-	... 7 more
-2018-01-15 16:49:58,392  INFO (msg:69) - 服务启动完毕
-2018-01-15 16:52:51,678  INFO (msg:36) - 
-2018-01-15 16:52:51,682  INFO (msg:37) - ################################################################################
-2018-01-15 16:52:51,682  INFO (msg:39) - ################################################################################
-2018-01-15 16:52:51,682  INFO (msg:41) - 
-2018-01-15 16:52:51,682  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 16:52:51,683  INFO (msg:47) - 
-2018-01-15 16:52:51,683  INFO (msg:48) - ################################################################################
-2018-01-15 16:52:51,683  INFO (msg:50) - ################################################################################
-2018-01-15 16:52:51,684  INFO (msg:52) - 
-2018-01-15 16:52:51,684  INFO (msg:57) - 开始启动服务
-2018-01-15 16:52:51,685  INFO (msg:60) - 配置加载完毕
-2018-01-15 16:52:51,692  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 16:52:51,693  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 16:52:51,698  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 16:52:51,699  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 16:52:52,599  INFO (msg:25) - 开始初始化ConfigLoadService服务
-2018-01-15 16:52:52,804  INFO (msg:92) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
-2018-01-15 16:52:52,807  INFO (msg:92) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
-2018-01-15 16:52:52,807  INFO (msg:62) - 服务加载完毕
-2018-01-15 16:52:52,807  INFO (msg:64) - 定时调度已启动
-2018-01-15 16:52:52,807  INFO (msg:69) - 服务启动完毕
-2018-01-15 16:53:38,143  INFO (msg:36) - 
-2018-01-15 16:53:38,147  INFO (msg:37) - ################################################################################
-2018-01-15 16:53:38,148  INFO (msg:39) - ################################################################################
-2018-01-15 16:53:38,148  INFO (msg:41) - 
-2018-01-15 16:53:38,149  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 16:53:38,149  INFO (msg:47) - 
-2018-01-15 16:53:38,149  INFO (msg:48) - ################################################################################
-2018-01-15 16:53:38,150  INFO (msg:50) - ################################################################################
-2018-01-15 16:53:38,150  INFO (msg:52) - 
-2018-01-15 16:53:38,150  INFO (msg:57) - 开始启动服务
-2018-01-15 16:53:38,151  INFO (msg:60) - 配置加载完毕
-2018-01-15 16:53:38,167  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 16:53:38,169  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 16:53:38,175  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 16:53:38,176  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 16:53:38,608 ERROR (msg:67) - 服务启动出错
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.test.service.db.mysql.mybatis.mapper.TestBeanMapper.getAnotherBean
-### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.test.service.db.mysql.mybatis.mapper.TestBeanMapper.getAnotherBean
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
-	at com.test.service.db.mysql.mybatis.MybatisService.init(MybatisService.java:68)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.test.service.db.mysql.mybatis.mapper.TestBeanMapper.getAnotherBean
-	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
-	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
-	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
-	... 6 more
-2018-01-15 16:53:38,614  INFO (msg:69) - 服务启动完毕
-2018-01-15 16:55:01,95  INFO (msg:36) - 
-2018-01-15 16:55:01,99  INFO (msg:37) - ################################################################################
-2018-01-15 16:55:01,99  INFO (msg:39) - ################################################################################
-2018-01-15 16:55:01,99  INFO (msg:41) - 
-2018-01-15 16:55:01,100  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 16:55:01,100  INFO (msg:47) - 
-2018-01-15 16:55:01,100  INFO (msg:48) - ################################################################################
-2018-01-15 16:55:01,101  INFO (msg:50) - ################################################################################
-2018-01-15 16:55:01,101  INFO (msg:52) - 
-2018-01-15 16:55:01,101  INFO (msg:57) - 开始启动服务
-2018-01-15 16:55:01,103  INFO (msg:60) - 配置加载完毕
-2018-01-15 16:55:01,117  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 16:55:01,120  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 16:55:01,121  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 16:55:01,124  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 16:55:01,950  INFO (msg:25) - 开始初始化ConfigLoadService服务
-2018-01-15 16:55:02,146  INFO (msg:92) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
-2018-01-15 16:55:02,148  INFO (msg:92) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
-2018-01-15 16:55:02,149  INFO (msg:62) - 服务加载完毕
-2018-01-15 16:55:02,149  INFO (msg:64) - 定时调度已启动
-2018-01-15 16:55:02,149  INFO (msg:69) - 服务启动完毕
-2018-01-15 17:05:30,607  INFO (msg:36) - 
-2018-01-15 17:05:30,615  INFO (msg:37) - ################################################################################
-2018-01-15 17:05:30,615  INFO (msg:39) - ################################################################################
-2018-01-15 17:05:30,615  INFO (msg:41) - 
-2018-01-15 17:05:30,616  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 17:05:30,616  INFO (msg:47) - 
-2018-01-15 17:05:30,616  INFO (msg:48) - ################################################################################
-2018-01-15 17:05:30,617  INFO (msg:50) - ################################################################################
-2018-01-15 17:05:30,617  INFO (msg:52) - 
-2018-01-15 17:05:30,618  INFO (msg:57) - 开始启动服务
-2018-01-15 17:05:30,618  INFO (msg:60) - 配置加载完毕
-2018-01-15 17:05:30,626  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 17:05:30,628  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 17:05:30,629  INFO (msg:37) - 开始初始化ibatisService服务
-2018-01-15 17:05:30,632  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 17:05:30,633  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 17:05:30,635 ERROR (msg:67) - 服务启动出错
-java.io.FileNotFoundException: configuration\ibatis\sqlMapConfig.xml (系统找不到指定的路径。)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(FileInputStream.java:195)
-	at java.io.FileInputStream.<init>(FileInputStream.java:138)
-	at java.io.FileInputStream.<init>(FileInputStream.java:93)
-	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
-	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
-	at com.ibatis.common.resources.Resources.getUrlAsStream(Resources.java:221)
-	at com.ibatis.common.resources.Resources.getUrlAsReader(Resources.java:232)
-	at com.test.service.db.mysql.ibatis.IbatisService.init(IbatisService.java:43)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-2018-01-15 17:05:30,636  INFO (msg:69) - 服务启动完毕
-2018-01-15 17:07:28,427  INFO (msg:36) - 
-2018-01-15 17:07:28,431  INFO (msg:37) - ################################################################################
-2018-01-15 17:07:28,431  INFO (msg:39) - ################################################################################
-2018-01-15 17:07:28,432  INFO (msg:41) - 
-2018-01-15 17:07:28,432  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 17:07:28,432  INFO (msg:47) - 
-2018-01-15 17:07:28,433  INFO (msg:48) - ################################################################################
-2018-01-15 17:07:28,433  INFO (msg:50) - ################################################################################
-2018-01-15 17:07:28,433  INFO (msg:52) - 
-2018-01-15 17:07:28,434  INFO (msg:57) - 开始启动服务
-2018-01-15 17:07:28,434  INFO (msg:60) - 配置加载完毕
-2018-01-15 17:07:28,442  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 17:07:28,443  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 17:07:28,445  INFO (msg:37) - 开始初始化ibatisService服务
-2018-01-15 17:07:28,450  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 17:07:28,451  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 17:07:28,682 ERROR (msg:67) - 服务启动出错
-java.lang.RuntimeException: Error occurred.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/sqlMap'.  Cause: java.io.IOException: Could not find resource ibatis/mapper/t_nyUser.xml
-	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:49)
-	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:39)
-	at com.ibatis.sqlmap.client.SqlMapClientBuilder.buildSqlMapClient(SqlMapClientBuilder.java:79)
-	at com.test.service.db.mysql.ibatis.IbatisService.init(IbatisService.java:51)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/sqlMap'.  Cause: java.io.IOException: Could not find resource ibatis/mapper/t_nyUser.xml
-	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:53)
-	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:46)
-	... 6 more
-Caused by: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/sqlMap'.  Cause: java.io.IOException: Could not find resource ibatis/mapper/t_nyUser.xml
-	at com.ibatis.common.xml.NodeletParser.processNodelet(NodeletParser.java:123)
-	at com.ibatis.common.xml.NodeletParser.process(NodeletParser.java:84)
-	at com.ibatis.common.xml.NodeletParser.process(NodeletParser.java:102)
-	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:72)
-	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:51)
-	... 7 more
-Caused by: java.io.IOException: Could not find resource ibatis/mapper/t_nyUser.xml
-	at com.ibatis.common.resources.Resources.getResourceAsStream(Resources.java:110)
-	at com.ibatis.common.resources.Resources.getResourceAsStream(Resources.java:95)
-	at com.ibatis.common.resources.Resources.getResourceAsReader(Resources.java:161)
-	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser$10.process(SqlMapConfigParser.java:262)
-	at com.ibatis.common.xml.NodeletParser.processNodelet(NodeletParser.java:121)
-	... 11 more
-2018-01-15 17:07:28,684  INFO (msg:69) - 服务启动完毕
-2018-01-15 17:08:48,631  INFO (msg:36) - 
-2018-01-15 17:08:48,635  INFO (msg:37) - ################################################################################
-2018-01-15 17:08:48,636  INFO (msg:39) - ################################################################################
-2018-01-15 17:08:48,636  INFO (msg:41) - 
-2018-01-15 17:08:48,636  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 17:08:48,637  INFO (msg:47) - 
-2018-01-15 17:08:48,637  INFO (msg:48) - ################################################################################
-2018-01-15 17:08:48,637  INFO (msg:50) - ################################################################################
-2018-01-15 17:08:48,637  INFO (msg:52) - 
-2018-01-15 17:08:48,638  INFO (msg:57) - 开始启动服务
-2018-01-15 17:08:48,638  INFO (msg:60) - 配置加载完毕
-2018-01-15 17:08:48,646  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 17:08:48,648  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 17:08:48,650  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 17:08:48,651  INFO (msg:37) - 开始初始化ibatisService服务
-2018-01-15 17:08:48,663  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 17:08:48,991 ERROR (msg:67) - 服务启动出错
-java.lang.RuntimeException: Error occurred.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/sqlMap'.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 66; 需要属性 "class", 并且必须为元素类型 "resultMap" 指定该属性。
-	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:49)
-	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:39)
-	at com.ibatis.sqlmap.client.SqlMapClientBuilder.buildSqlMapClient(SqlMapClientBuilder.java:79)
-	at com.test.service.db.mysql.ibatis.IbatisService.init(IbatisService.java:49)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:155)
-	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:141)
-	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:61)
-Caused by: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/sqlMap'.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 66; 需要属性 "class", 并且必须为元素类型 "resultMap" 指定该属性。
-	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:53)
-	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:46)
-	... 6 more
-Caused by: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/sqlMap'.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 66; 需要属性 "class", 并且必须为元素类型 "resultMap" 指定该属性。
-	at com.ibatis.common.xml.NodeletParser.processNodelet(NodeletParser.java:123)
-	at com.ibatis.common.xml.NodeletParser.process(NodeletParser.java:84)
-	at com.ibatis.common.xml.NodeletParser.process(NodeletParser.java:102)
-	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:72)
-	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:51)
-	... 7 more
-Caused by: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 66; 需要属性 "class", 并且必须为元素类型 "resultMap" 指定该属性。
-	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:53)
-	at com.ibatis.sqlmap.engine.builder.xml.SqlMapParser.parse(SqlMapParser.java:40)
-	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser$10.process(SqlMapConfigParser.java:270)
-	at com.ibatis.common.xml.NodeletParser.processNodelet(NodeletParser.java:121)
-	... 11 more
-Caused by: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 66; 需要属性 "class", 并且必须为元素类型 "resultMap" 指定该属性。
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
-	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.addDTDDefaultAttrsAndValidate(XMLDTDValidator.java:1171)
-	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleStartElement(XMLDTDValidator.java:1917)
-	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement(XMLDTDValidator.java:742)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1359)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
-	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
-	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
-	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
-	at com.ibatis.common.xml.NodeletParser.createDocument(NodeletParser.java:157)
-	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:50)
-	... 14 more
-2018-01-15 17:08:48,993  INFO (msg:69) - 服务启动完毕
-2018-01-15 17:09:54,486  INFO (msg:36) - 
-2018-01-15 17:09:54,490  INFO (msg:37) - ################################################################################
-2018-01-15 17:09:54,491  INFO (msg:39) - ################################################################################
-2018-01-15 17:09:54,491  INFO (msg:41) - 
-2018-01-15 17:09:54,491  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 17:09:54,492  INFO (msg:47) - 
-2018-01-15 17:09:54,492  INFO (msg:48) - ################################################################################
-2018-01-15 17:09:54,492  INFO (msg:50) - ################################################################################
-2018-01-15 17:09:54,493  INFO (msg:52) - 
-2018-01-15 17:09:54,493  INFO (msg:57) - 开始启动服务
-2018-01-15 17:09:54,494  INFO (msg:60) - 配置加载完毕
-2018-01-15 17:09:54,504  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 17:09:54,508  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 17:09:54,511  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 17:09:54,515  INFO (msg:37) - 开始初始化ibatisService服务
-2018-01-15 17:09:54,518  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 17:09:54,834  INFO (msg:25) - 开始初始化ConfigLoadService服务
-2018-01-15 17:09:55,152  INFO (msg:92) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
-2018-01-15 17:09:55,155  INFO (msg:92) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
-2018-01-15 17:09:55,158  INFO (msg:62) - 服务加载完毕
-2018-01-15 17:09:55,159  INFO (msg:64) - 定时调度已启动
-2018-01-15 17:09:55,160  INFO (msg:69) - 服务启动完毕
-2018-01-15 17:11:47,933  INFO (msg:36) - 
-2018-01-15 17:11:47,938  INFO (msg:37) - ################################################################################
-2018-01-15 17:11:47,938  INFO (msg:39) - ################################################################################
-2018-01-15 17:11:47,938  INFO (msg:41) - 
-2018-01-15 17:11:47,939  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 17:11:47,939  INFO (msg:47) - 
-2018-01-15 17:11:47,940  INFO (msg:48) - ################################################################################
-2018-01-15 17:11:47,940  INFO (msg:50) - ################################################################################
-2018-01-15 17:11:47,940  INFO (msg:52) - 
-2018-01-15 17:11:47,941  INFO (msg:57) - 开始启动服务
-2018-01-15 17:11:47,941  INFO (msg:60) - 配置加载完毕
-2018-01-15 17:11:47,953  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 17:11:47,958  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 17:11:47,963  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 17:11:47,968  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 17:11:49,415  INFO (msg:37) - 开始初始化ibatisService服务
-2018-01-15 17:12:32,369  INFO (msg:25) - 开始初始化ConfigLoadService服务
-2018-01-15 17:12:32,617  INFO (msg:92) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
-2018-01-15 17:12:32,620  INFO (msg:92) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
-2018-01-15 17:12:32,620  INFO (msg:62) - 服务加载完毕
-2018-01-15 17:12:32,620  INFO (msg:64) - 定时调度已启动
-2018-01-15 17:12:32,621  INFO (msg:69) - 服务启动完毕
-2018-01-15 17:13:07,72  INFO (msg:36) - 
-2018-01-15 17:13:07,77  INFO (msg:37) - ################################################################################
-2018-01-15 17:13:07,77  INFO (msg:39) - ################################################################################
-2018-01-15 17:13:07,77  INFO (msg:41) - 
-2018-01-15 17:13:07,78  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 17:13:07,78  INFO (msg:47) - 
-2018-01-15 17:13:07,78  INFO (msg:48) - ################################################################################
-2018-01-15 17:13:07,79  INFO (msg:50) - ################################################################################
-2018-01-15 17:13:07,79  INFO (msg:52) - 
-2018-01-15 17:13:07,79  INFO (msg:57) - 开始启动服务
-2018-01-15 17:13:07,80  INFO (msg:60) - 配置加载完毕
-2018-01-15 17:13:07,89  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 17:13:07,90  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 17:13:07,91  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 17:13:07,92  INFO (msg:37) - 开始初始化ibatisService服务
-2018-01-15 17:13:07,95  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 17:13:07,384  INFO (msg:25) - 开始初始化ConfigLoadService服务
-2018-01-15 17:13:07,694  INFO (msg:92) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
-2018-01-15 17:13:07,697  INFO (msg:92) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
-2018-01-15 17:13:07,698  INFO (msg:62) - 服务加载完毕
-2018-01-15 17:13:07,698  INFO (msg:64) - 定时调度已启动
-2018-01-15 17:13:07,699  INFO (msg:69) - 服务启动完毕
-2018-01-15 17:13:21,697  INFO (msg:36) - 
-2018-01-15 17:13:21,702  INFO (msg:37) - ################################################################################
-2018-01-15 17:13:21,703  INFO (msg:39) - ################################################################################
-2018-01-15 17:13:21,704  INFO (msg:41) - 
-2018-01-15 17:13:21,705  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 17:13:21,705  INFO (msg:47) - 
-2018-01-15 17:13:21,706  INFO (msg:48) - ################################################################################
-2018-01-15 17:13:21,706  INFO (msg:50) - ################################################################################
-2018-01-15 17:13:21,707  INFO (msg:52) - 
-2018-01-15 17:13:21,707  INFO (msg:57) - 开始启动服务
-2018-01-15 17:13:21,708  INFO (msg:60) - 配置加载完毕
-2018-01-15 17:13:21,722  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 17:13:21,724  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 17:13:21,726  INFO (msg:37) - 开始初始化ibatisService服务
-2018-01-15 17:13:21,728  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 17:13:21,728  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 17:13:22,498  INFO (msg:25) - 开始初始化ConfigLoadService服务
-2018-01-15 17:13:22,728  INFO (msg:92) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
-2018-01-15 17:13:22,730  INFO (msg:92) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
-2018-01-15 17:13:22,730  INFO (msg:62) - 服务加载完毕
-2018-01-15 17:13:22,730  INFO (msg:64) - 定时调度已启动
-2018-01-15 17:13:22,731  INFO (msg:69) - 服务启动完毕
-2018-01-15 17:13:48,491  INFO (msg:36) - 
-2018-01-15 17:13:48,495  INFO (msg:37) - ################################################################################
-2018-01-15 17:13:48,495  INFO (msg:39) - ################################################################################
-2018-01-15 17:13:48,495  INFO (msg:41) - 
-2018-01-15 17:13:48,496  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 17:13:48,497  INFO (msg:47) - 
-2018-01-15 17:13:48,497  INFO (msg:48) - ################################################################################
-2018-01-15 17:13:48,497  INFO (msg:50) - ################################################################################
-2018-01-15 17:13:48,498  INFO (msg:52) - 
-2018-01-15 17:13:48,498  INFO (msg:57) - 开始启动服务
-2018-01-15 17:13:48,499  INFO (msg:60) - 配置加载完毕
-2018-01-15 17:13:48,515  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 17:13:48,516  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 17:13:48,517  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 17:13:48,519  INFO (msg:37) - 开始初始化ibatisService服务
-2018-01-15 17:13:48,521  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 17:13:49,192  INFO (msg:25) - 开始初始化ConfigLoadService服务
-2018-01-15 17:13:49,450  INFO (msg:92) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
-2018-01-15 17:13:49,453  INFO (msg:92) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
-2018-01-15 17:13:49,454  INFO (msg:62) - 服务加载完毕
-2018-01-15 17:13:49,455  INFO (msg:64) - 定时调度已启动
-2018-01-15 17:13:49,461  INFO (msg:69) - 服务启动完毕
-2018-01-15 17:21:00,993  INFO (msg:36) - 
-2018-01-15 17:21:00,998  INFO (msg:37) - ################################################################################
-2018-01-15 17:21:00,998  INFO (msg:39) - ################################################################################
-2018-01-15 17:21:00,998  INFO (msg:41) - 
-2018-01-15 17:21:00,999  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 17:21:00,999  INFO (msg:47) - 
-2018-01-15 17:21:01,0  INFO (msg:48) - ################################################################################
-2018-01-15 17:21:01,0  INFO (msg:50) - ################################################################################
-2018-01-15 17:21:01,0  INFO (msg:52) - 
-2018-01-15 17:21:01,0  INFO (msg:57) - 开始启动服务
-2018-01-15 17:21:01,1  INFO (msg:60) - 配置加载完毕
-2018-01-15 17:21:01,18  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 17:21:01,20  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 17:21:01,22  INFO (msg:37) - 开始初始化ibatisService服务
-2018-01-15 17:21:01,24  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 17:21:01,25  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 17:21:01,669  INFO (msg:25) - 开始初始化ConfigLoadService服务
-2018-01-15 17:21:01,888  INFO (msg:92) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
-2018-01-15 17:21:01,890  INFO (msg:92) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
-2018-01-15 17:21:01,890  INFO (msg:62) - 服务加载完毕
-2018-01-15 17:21:01,891  INFO (msg:64) - 定时调度已启动
-2018-01-15 17:21:01,891  INFO (msg:69) - 服务启动完毕
-2018-01-15 17:21:27,730  INFO (msg:36) - 
-2018-01-15 17:21:27,735  INFO (msg:37) - ################################################################################
-2018-01-15 17:21:27,735  INFO (msg:39) - ################################################################################
-2018-01-15 17:21:27,736  INFO (msg:41) - 
-2018-01-15 17:21:27,736  INFO (msg:43) -                                                           Welcome to seasons!!!
-2018-01-15 17:21:27,737  INFO (msg:47) - 
-2018-01-15 17:21:27,737  INFO (msg:48) - ################################################################################
-2018-01-15 17:21:27,737  INFO (msg:50) - ################################################################################
-2018-01-15 17:21:27,738  INFO (msg:52) - 
-2018-01-15 17:21:27,739  INFO (msg:57) - 开始启动服务
-2018-01-15 17:21:27,740  INFO (msg:60) - 配置加载完毕
-2018-01-15 17:21:27,746  INFO (msg:33) - 开始初始化JettyServerService服务
-2018-01-15 17:21:27,748  INFO (msg:33) - 开始初始化WebSocketService服务
-2018-01-15 17:21:27,749  INFO (msg:45) - thread1 启动对于:8777监听
-2018-01-15 17:21:27,751  INFO (msg:48) - thread2 启动对于:8778监听
-2018-01-15 17:21:28,593  INFO (msg:25) - 开始初始化ConfigLoadService服务
-2018-01-15 17:21:28,789  INFO (msg:92) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
-2018-01-15 17:21:28,791  INFO (msg:92) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
-2018-01-15 17:21:28,791  INFO (msg:62) - 服务加载完毕
-2018-01-15 17:21:28,791  INFO (msg:64) - 定时调度已启动
-2018-01-15 17:21:28,792  INFO (msg:69) - 服务启动完毕
+2018-01-26 16:12:35,180  INFO (msg:41) - 
+2018-01-26 16:12:35,186  INFO (msg:42) - ################################################################################
+2018-01-26 16:12:35,186  INFO (msg:44) - ################################################################################
+2018-01-26 16:12:35,186  INFO (msg:46) - 
+2018-01-26 16:12:35,187  INFO (msg:48) -                                                           Welcome to seasons!!!
+2018-01-26 16:12:35,187  INFO (msg:52) - 
+2018-01-26 16:12:35,188  INFO (msg:53) - ################################################################################
+2018-01-26 16:12:35,189  INFO (msg:55) - ################################################################################
+2018-01-26 16:12:35,189  INFO (msg:57) - 
+2018-01-26 16:12:35,189  INFO (msg:82) - 开始启动服务
+2018-01-26 16:12:35,190  INFO (msg:85) - 配置加载完毕
+2018-01-26 16:12:35,202  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-26 16:12:35,203  INFO (msg:34) - 开始初始化WebSocketService服务
+2018-01-26 16:12:35,207  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-26 16:12:35,209  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-26 16:12:35,899  INFO (msg:25) - 开始初始化ConfigLoadService服务
+2018-01-26 16:12:36,74  INFO (msg:92) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-26 16:12:36,80  INFO (msg:92) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-26 16:12:36,82  INFO (msg:24) - 停服钩子加载完毕
+2018-01-26 16:12:36,84  INFO (msg:25) - 开始加载memcached配置
+2018-01-26 16:12:36,86  INFO (msg:29) - 加载缓存配置完毕
+2018-01-26 16:12:38,222 ERROR (msg:49) - Shutdown service error:main
+java.lang.NoClassDefFoundError: org/apache/commons/pool/BasePoolableObjectFactory
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at com.danga.MemCached.SockIOPool.getInstance(SockIOPool.java:241)
+	at com.test.service.memcached.BaseMemcached.initPool(BaseMemcached.java:35)
+	at com.test.service.memcached.BaseMemcached.getClient(BaseMemcached.java:51)
+	at com.test.service.memcached.BaseMemcached.checkMemcached(BaseMemcached.java:69)
+	at com.test.service.memcached.MemcachedService.init(MemcachedService.java:30)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:208)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:186)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:86)
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.pool.BasePoolableObjectFactory
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 20 more
+2018-01-26 16:13:29,900  INFO (msg:41) - 
+2018-01-26 16:13:29,908  INFO (msg:42) - ################################################################################
+2018-01-26 16:13:29,908  INFO (msg:44) - ################################################################################
+2018-01-26 16:13:29,909  INFO (msg:46) - 
+2018-01-26 16:13:29,910  INFO (msg:48) -                                                           Welcome to seasons!!!
+2018-01-26 16:13:29,910  INFO (msg:52) - 
+2018-01-26 16:13:29,911  INFO (msg:53) - ################################################################################
+2018-01-26 16:13:29,911  INFO (msg:55) - ################################################################################
+2018-01-26 16:13:29,911  INFO (msg:57) - 
+2018-01-26 16:13:29,911  INFO (msg:82) - 开始启动服务
+2018-01-26 16:13:29,912  INFO (msg:85) - 配置加载完毕
+2018-01-26 16:13:29,924  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-26 16:13:29,926  INFO (msg:34) - 开始初始化WebSocketService服务
+2018-01-26 16:13:29,927  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-26 16:13:29,943  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-26 16:13:30,197 ERROR (msg:49) -   JettyServerService error 
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:321)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:236)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:366)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.jettyServer.JettyServer.startJetty(JettyServer.java:116)
+	at com.test.web.httpRequest.JettyServerService$1.run(JettyServerService.java:46)
+	at java.lang.Thread.run(Thread.java:748)
+2018-01-26 16:13:30,203 ERROR (msg:52) -   WebSocketService error 
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:321)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:236)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:366)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.jettyServer.JettyServer.startJetty(JettyServer.java:116)
+	at com.test.web.websocket.base.WebSocketService$1.run(WebSocketService.java:49)
+	at java.lang.Thread.run(Thread.java:748)
+2018-01-26 16:13:30,565  INFO (msg:25) - 开始初始化ConfigLoadService服务
+2018-01-26 16:13:30,760  INFO (msg:92) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-26 16:13:30,763  INFO (msg:92) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-26 16:13:30,765  INFO (msg:24) - 停服钩子加载完毕
+2018-01-26 16:13:30,765  INFO (msg:25) - 开始加载memcached配置
+2018-01-26 16:13:30,767  INFO (msg:29) - 加载缓存配置完毕
+2018-01-26 16:13:45,291  INFO (msg:41) - 
+2018-01-26 16:13:45,295  INFO (msg:42) - ################################################################################
+2018-01-26 16:13:45,295  INFO (msg:44) - ################################################################################
+2018-01-26 16:13:45,295  INFO (msg:46) - 
+2018-01-26 16:13:45,296  INFO (msg:48) -                                                           Welcome to seasons!!!
+2018-01-26 16:13:45,297  INFO (msg:52) - 
+2018-01-26 16:13:45,297  INFO (msg:53) - ################################################################################
+2018-01-26 16:13:45,298  INFO (msg:55) - ################################################################################
+2018-01-26 16:13:45,299  INFO (msg:57) - 
+2018-01-26 16:13:45,300  INFO (msg:82) - 开始启动服务
+2018-01-26 16:13:45,301  INFO (msg:85) - 配置加载完毕
+2018-01-26 16:13:45,310  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-26 16:13:45,312  INFO (msg:34) - 开始初始化WebSocketService服务
+2018-01-26 16:13:45,315  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-26 16:13:45,315  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-26 16:13:45,975  INFO (msg:25) - 开始初始化ConfigLoadService服务
+2018-01-26 16:13:46,179  INFO (msg:92) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-26 16:13:46,182  INFO (msg:92) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-26 16:13:46,183  INFO (msg:24) - 停服钩子加载完毕
+2018-01-26 16:13:46,183  INFO (msg:25) - 开始加载memcached配置
+2018-01-26 16:13:46,185  INFO (msg:29) - 加载缓存配置完毕
+2018-01-26 16:13:48,338 ERROR (msg:49) - Shutdown service error:main
+java.lang.NoClassDefFoundError: org/apache/commons/collections/CursorableLinkedList
+	at org.apache.commons.pool.impl.GenericObjectPool.<init>(GenericObjectPool.java:392)
+	at org.apache.commons.pool.impl.GenericObjectPool.<init>(GenericObjectPool.java:320)
+	at com.schooner.MemCached.SchoonerSockIOPool.populateConsistentBuckets(SchoonerSockIOPool.java:383)
+	at com.schooner.MemCached.SchoonerSockIOPool.initialize(SchoonerSockIOPool.java:299)
+	at com.danga.MemCached.SockIOPool.initialize(SockIOPool.java:593)
+	at com.test.service.memcached.BaseMemcached.initPool(BaseMemcached.java:42)
+	at com.test.service.memcached.BaseMemcached.getClient(BaseMemcached.java:51)
+	at com.test.service.memcached.BaseMemcached.checkMemcached(BaseMemcached.java:69)
+	at com.test.service.memcached.MemcachedService.init(MemcachedService.java:30)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:208)
+	at com.test.SeasonsStartServer$SeasonService.<init>(SeasonsStartServer.java:186)
+	at com.test.SeasonsStartServer.main(SeasonsStartServer.java:86)
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections.CursorableLinkedList
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 12 more
+2018-01-26 16:14:59,216  INFO (msg:41) - 
+2018-01-26 16:14:59,220  INFO (msg:42) - ################################################################################
+2018-01-26 16:14:59,221  INFO (msg:44) - ################################################################################
+2018-01-26 16:14:59,221  INFO (msg:46) - 
+2018-01-26 16:14:59,222  INFO (msg:48) -                                                           Welcome to seasons!!!
+2018-01-26 16:14:59,224  INFO (msg:52) - 
+2018-01-26 16:14:59,224  INFO (msg:53) - ################################################################################
+2018-01-26 16:14:59,224  INFO (msg:55) - ################################################################################
+2018-01-26 16:14:59,224  INFO (msg:57) - 
+2018-01-26 16:14:59,225  INFO (msg:82) - 开始启动服务
+2018-01-26 16:14:59,225  INFO (msg:85) - 配置加载完毕
+2018-01-26 16:14:59,236  INFO (msg:33) - 开始初始化JettyServerService服务
+2018-01-26 16:14:59,238  INFO (msg:34) - 开始初始化WebSocketService服务
+2018-01-26 16:14:59,240  INFO (msg:45) - thread1 启动对于:8777监听
+2018-01-26 16:14:59,244  INFO (msg:48) - thread2 启动对于:8778监听
+2018-01-26 16:14:59,986  INFO (msg:25) - 开始初始化ConfigLoadService服务
+2018-01-26 16:15:00,182  INFO (msg:92) - {"id":1,"name":"测试","open":true,"value":100,"time":1535817600000}
+2018-01-26 16:15:00,185  INFO (msg:92) - {"id":2,"name":"test","open":false,"value":200,"time":1517500800000}
+2018-01-26 16:15:00,186  INFO (msg:24) - 停服钩子加载完毕
+2018-01-26 16:15:00,186  INFO (msg:25) - 开始加载memcached配置
+2018-01-26 16:15:00,187  INFO (msg:29) - 加载缓存配置完毕
+2018-01-26 16:15:00,219  INFO (msg:101) - memcached正常!
+2018-01-26 16:15:00,220  INFO (msg:74) - memcached正常!
+2018-01-26 16:15:00,220  INFO (msg:33) - memcached配置加载完毕
+2018-01-26 16:15:00,220  INFO (msg:87) - 服务加载完毕
+2018-01-26 16:15:00,220  INFO (msg:89) - 定时调度已启动
+2018-01-26 16:15:00,221  INFO (msg:95) - 服务启动完毕
+2018-01-26 16:15:00,221  INFO (msg:61) - 
+2018-01-26 16:15:00,221  INFO (msg:62) - ################################################################################
+2018-01-26 16:15:00,221  INFO (msg:64) - ################################################################################
+2018-01-26 16:15:00,221  INFO (msg:66) - 
+2018-01-26 16:15:00,221  INFO (msg:68) -                                           Welcome to seasons!!! Server Started!
+2018-01-26 16:15:00,221  INFO (msg:72) - 
+2018-01-26 16:15:00,222  INFO (msg:73) - ################################################################################
+2018-01-26 16:15:00,222  INFO (msg:75) - ################################################################################
+2018-01-26 16:15:00,222  INFO (msg:77) - 

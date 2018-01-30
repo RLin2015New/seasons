@@ -5,6 +5,8 @@
 <sqlMapConfig>
 
 	<settings useStatementNamespaces="true" />
+
+
 	<!-- Configure a built-in transaction manager. If you're using an app server, 
 		you probably want to use its transaction manager and a managed datasource -->
 	<transactionManager type="JDBC" commitRequired="false">

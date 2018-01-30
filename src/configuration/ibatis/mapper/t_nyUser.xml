@@ -6,7 +6,7 @@
 
 
 
-	<resultMap class="com.test.tt.login.bean.TestBean" id="testBean">
+	<resultMap class="com.season.sample.login.bean.TestBean" id="testBean">
 		<result property="userId" column="userId" />
 		<result property="name" column="name" />
 	</resultMap>
